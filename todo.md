@@ -201,3 +201,9 @@
 - [x] 修復Windows／iPhone窄視窗的三語控制、導覽換行與頁面置中，讓所有裝置使用同一可讀版面。
 - [x] 新增可導出總覽、美股、港股、跨市場、本週關注、來源的一份完整PDF控制，並驗證PDF內容與六區資料邊界。
 - [x] 完成本地桌面、Windows窄視窗和iPhone預覽後，先讓William確認才更新公司公開Pages。
+
+## Heatmap Clarification — Preserve Window Controls
+
+- [ ] 恢復美股熱力圖的1D／5D／20D切換，保留綠／灰／橙紅報酬語義。
+- [ ] 僅移除SVG「導出」按鈕及其功能，不移除熱力圖互動比較。
+- [ ] 刪除TW／CN／EN熱力圖說明中的「BIT Blue不代表表現」句子，完成本地預覽後待William確認再發布。
