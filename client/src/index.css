@@ -133,3 +133,30 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid 
 .bit-v3 .bit-reference-header button { letter-spacing: 0; }
 .bit-v3 .bit-wordmark-crop { display: block; width: 54px; height: 32px; object-fit: cover; object-position: center; }
 .bit-v3 .section-title { color: #0A0D14; font-family: "Matrixport Pro", system-ui, sans-serif; }
+
+/* Daily hub device contract: language and complete-report PDF controls stay available on all supported widths. */
+html, body, #root { width: 100%; max-width: 100%; overflow-x: hidden; }
+.bit-v3 { width: 100%; max-width: 100%; overflow-x: clip; }
+.bit-v3 .bit-reference-header { width: 100%; max-width: 100%; }
+.bit-v3 .bit-header-main, .bit-v3 .bit-header-nav { min-width: 0; width: 100%; }
+.bit-v3 .bit-header-nav { scrollbar-width: thin; scroll-padding-inline: 1.25rem; }
+.bit-v3 .bit-header-controls { min-width: max-content; }
+@media (max-width: 639px) {
+  .bit-v3 .bit-reference-header { position: relative; }
+  .bit-v3 .bit-header-main { align-items: flex-start; }
+  .bit-v3 .bit-header-nav { gap: 1.5rem; padding-inline: 1.25rem; }
+  .bit-v3 .bit-archive-trigger { bottom: 1rem; right: 1rem; max-width: calc(100vw - 2rem); }
+  .bit-v3 .section-title { font-size: clamp(2.05rem, 10vw, 3.25rem); line-height: 1.08; word-break: normal; overflow-wrap: anywhere; }
+}
+
+@media print {
+  @page { size: A4; margin: 11mm; }
+  html, body, #root, .bit-v3 { overflow: visible !important; background: #FFFFFF !important; }
+  .bit-print-action { display: none !important; }
+  .bit-print-document .bit-print-section { break-before: page; page-break-before: always; }
+  .bit-print-document .bit-print-section:first-of-type { break-before: auto; page-break-before: auto; }
+  .bit-print-document header, .bit-print-document .bit-archive-trigger { display: none !important; }
+  .bit-print-document [class*="sticky"], .bit-print-document [class*="fixed"] { position: static !important; }
+  .bit-print-document .rounded-\[12px\], .bit-print-document .rounded-\[10px\] { break-inside: avoid; page-break-inside: avoid; }
+  .bit-print-document a { color: #0A0D14 !important; text-decoration: none; }
+}

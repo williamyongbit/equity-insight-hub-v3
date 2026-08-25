@@ -1,0 +1,35 @@
+{
+  "latest": "2026-08-25",
+  "editions": [
+    {
+      "date": "2026-08-25",
+      "type": "daily",
+      "label": "25 Aug · Daily",
+      "summary": {
+        "TW": "最新：美股8月24日完成時段／港股日內監測",
+        "CN": "最新：美股8月24日完成时段／港股日内监测",
+        "EN": "Latest: U.S. 24 Aug completed session / Hong Kong intraday monitoring"
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "type": "weekend",
+      "label": "24 Aug · Weekend",
+      "summary": {
+        "TW": "週末研究、This Week驗證層及完整來源審計",
+        "CN": "周末研究、This Week验证层及完整来源审计",
+        "EN": "Weekend research, This Week verification layer and full source audit"
+      }
+    },
+    {
+      "date": "2026-08-21",
+      "type": "historical",
+      "label": "21 Aug · Historical",
+      "summary": {
+        "TW": "完整歷史研究與雙閱讀模式",
+        "CN": "完整历史研究与双阅读模式",
+        "EN": "Full historical research and both reading modes"
+      }
+    }
+  ]
+}

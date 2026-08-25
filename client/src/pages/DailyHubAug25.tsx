@@ -5,11 +5,13 @@
 import { Archive, ArrowUpRight, Clock3, Layers3, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import hkData from "../../../data/2026-08-25/hk_market.json";
+import archiveData from "../../../data/report_archive.json";
 import DailyAug25Full from "./DailyAug25Full";
 
 type Language = "TW" | "CN" | "EN";
 const base = import.meta.env.BASE_URL;
 const hk: any = hkData;
+const archive: any = archiveData;
 
 const copy: Record<Language, any> = {
   TW: {
@@ -53,18 +55,20 @@ export default function DailyHubAug25() {
   const query = new URLSearchParams(window.location.search);
   const language = (["TW", "CN", "EN"].includes(query.get("lang") || "") ? query.get("lang") : "CN") as Language;
   const market = query.get("market") || "overview";
+  const exportPdf = query.get("export") === "pdf";
   const [archiveOpen, setArchiveOpen] = useState(false);
   const t = copy[language];
+  const latestDate = archive.latest as string;
   void locationVersion;
 
   return <div className="bit-v3 relative bg-white text-[#0A0D14]">
-    <DailyAug25Full />
-    {market === "hk" && (
+    <DailyAug25Full printAll={exportPdf} printHongKongDesk={exportPdf ? <HongKongMarketDesk t={t}/> : undefined} />
+    {!exportPdf && market === "hk" && (
       <HongKongMarketDesk t={t} />
     )}
-    <button onClick={() => setArchiveOpen(true)} className="bit-action fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-[10px] border border-[#0040FF] bg-white px-4 py-3 text-xs font-bold text-[#0040FF] shadow-[0_12px_34px_rgba(10,13,20,.16)]" aria-label={t.archive}><Archive size={16}/><span className="hidden sm:inline">{t.archive}</span></button>
-    {archiveOpen && <div className="fixed inset-0 z-50 flex justify-end bg-[#0A0D14]/25 p-3 sm:p-6" role="dialog" aria-modal="true" aria-label={t.archiveTitle}>
-      <aside className="h-full w-full max-w-[440px] overflow-y-auto rounded-[14px] bg-white p-6 shadow-2xl"><div className="flex items-start justify-between gap-4"><div><p className="section-kicker">BIT DAILY HUB</p><h2 className="mt-3 font-display text-3xl">{t.archiveTitle}</h2></div><button onClick={() => setArchiveOpen(false)} className="bit-action rounded-[8px] border border-[#E4E6EA] p-2 text-[#59657A]" aria-label="Close"><X size={18}/></button></div><div className="mt-7 rounded-[10px] border-l-2 border-[#0040FF] bg-[#F5F7FA] p-5"><p className="font-mono text-[10px] font-bold tracking-[.14em] text-[#0040FF]">{t.canonical.toUpperCase()}</p><p className="mt-3 text-sm leading-6 text-[#59657A]">{t.canonicalBody}</p><a href={`${base}?lang=${language}`} className="bit-action mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#0040FF]"><ArrowUpRight size={14}/>{t.latest}</a></div><div className="mt-7 space-y-3">{t.dates.map((row: string[], i: number) => <a key={row[0]} href={`${base}?${row[0] === "2026-08-25" ? "" : `date=${row[0]}&`}lang=${language}`} className="group block rounded-[10px] border border-[#E4E6EA] p-5 transition hover:border-[#0040FF]"><div className="flex items-center justify-between gap-4"><p className="font-mono text-[11px] font-bold tracking-[.13em] text-[#0040FF]">{row[1]}</p>{i === 0 && <span className="rounded-full bg-[#E8F0FF] px-2 py-1 font-mono text-[9px] font-bold text-[#0040FF]">{t.latest}</span>}</div><p className="mt-3 text-sm leading-6 text-[#59657A]">{row[2]}</p><p className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#0A0D14]">{t.open}<ArrowUpRight size={13}/></p></a>)}</div></aside>
+    {!exportPdf && <button onClick={() => setArchiveOpen(true)} className="bit-action bit-archive-trigger fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-[10px] border border-[#0040FF] bg-white px-4 py-3 text-xs font-bold text-[#0040FF] shadow-[0_12px_34px_rgba(10,13,20,.16)]" aria-label={t.archive}><Archive size={16}/><span>{t.archive}</span></button>}
+    {!exportPdf && archiveOpen && <div className="fixed inset-0 z-50 flex justify-end bg-[#0A0D14]/25 p-3 sm:p-6" role="dialog" aria-modal="true" aria-label={t.archiveTitle}>
+      <aside className="h-full w-full max-w-[440px] overflow-y-auto rounded-[14px] bg-white p-6 shadow-2xl"><div className="flex items-start justify-between gap-4"><div><p className="section-kicker">BIT DAILY HUB</p><h2 className="mt-3 font-display text-3xl">{t.archiveTitle}</h2></div><button onClick={() => setArchiveOpen(false)} className="bit-action rounded-[8px] border border-[#E4E6EA] p-2 text-[#59657A]" aria-label="Close"><X size={18}/></button></div><div className="mt-7 rounded-[10px] border-l-2 border-[#0040FF] bg-[#F5F7FA] p-5"><p className="font-mono text-[10px] font-bold tracking-[.14em] text-[#0040FF]">{t.canonical.toUpperCase()}</p><p className="mt-3 text-sm leading-6 text-[#59657A]">{t.canonicalBody}</p><a href={`${base}?lang=${language}`} className="bit-action mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#0040FF]"><ArrowUpRight size={14}/>{t.latest}</a></div><div className="mt-7 space-y-3">{archive.editions.map((edition: any) => <a key={edition.date} href={`${base}?${edition.date === latestDate ? "" : `date=${edition.date}&`}lang=${language}`} className="group block rounded-[10px] border border-[#E4E6EA] p-5 transition hover:border-[#0040FF]"><div className="flex items-center justify-between gap-4"><p className="font-mono text-[11px] font-bold tracking-[.13em] text-[#0040FF]">{edition.label}</p>{edition.date === latestDate && <span className="rounded-full bg-[#E8F0FF] px-2 py-1 font-mono text-[9px] font-bold text-[#0040FF]">{t.latest}</span>}</div><p className="mt-3 text-sm leading-6 text-[#59657A]">{edition.summary[language]}</p><p className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#0A0D14]">{t.open}<ArrowUpRight size={13}/></p></a>)}</div></aside>
     </div>}
   </div>;
 }

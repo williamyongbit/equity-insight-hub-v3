@@ -193,3 +193,11 @@
 - [x] 將`williamyongbit/equity-insight-hub-v3`改為Public並以`gh-pages`分支啟用GitHub Pages。
 - [x] 發布已批准的精簡美股頁與港股市場連續性桌至公司公開Pages。
 - [x] 驗證公司公開根網址、版本庫、24日歷史入口與港股市場分析後交付。
+
+## Responsive Controls, Daily Archive and PDF Export
+
+- [ ] 移除美股熱力圖的1D／5D／20D廣度控制、舊SVG「導出」按鈕及所有相關功能。
+- [ ] 將每日版本庫改為可由日期清單持續新增的單一資料來源，不再於元件內硬編碼版本。
+- [ ] 修復Windows／iPhone窄視窗的三語控制、導覽換行與頁面置中，讓所有裝置使用同一可讀版面。
+- [ ] 新增可導出總覽、美股、港股、跨市場、本週關注、來源的一份完整PDF控制，並驗證PDF內容與六區資料邊界。
+- [ ] 完成本地桌面、Windows窄視窗和iPhone預覽後，先讓William確認才更新公司公開Pages。
