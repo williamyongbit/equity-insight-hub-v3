@@ -167,3 +167,23 @@
 - [x] 建立固定daily hub網址、可見歷史版本按鈕／抽屜與歷史頁切換，保留所有已發布日期。
 - [x] 擴充港股模組：9:00–16:00 HKT交易時鐘、as-of盤中快照、上次完成收市、午市／下午更新邊界及跨市場傳導。
 - [x] 完成本地桌面／行動版預覽與三語驗證後，先讓William確認才發布GitHub及GitHub Pages。
+
+## 2026-08-25 Standalone HTML Download Package
+
+- [x] 將25日最終版的繁中、簡中與英文內容封裝為各自可離線開啟的HTML文件。
+- [x] 驗證每份HTML具備完整報告、來源、資料邊界、免責聲明及可讀的BIT視覺樣式。
+- [x] 產生包含三份HTML與README的壓縮下載包供William分享及網頁瀏覽。
+
+## Mentor Revision — Lean Overview, Rich Hong Kong and Company Domain
+
+- [ ] 移除總覽中「美股廣度代理」及「本時段未能證明的事情」兩個區塊，以及所有TW／CN／EN相應文案。
+- [ ] 將港股頁擴展為昨日完成收市、今日盤中快照、板塊／個股、南向／資金、跨市場傳導與下一驗證的完整雙時鐘分析。
+- [ ] 比較GitHub組織＋自訂域名、Vercel＋公司域名及其他公司化單一連結選項，明確區分公司帳號／域名註冊／企業授權的人工步驟。
+- [ ] 先完成本地三語預覽與桌面／行動版驗證，待William確認後才發布。
+
+## Approved Publication and Company GitHub Maintenance Mirror
+
+- [ ] 發布已批准的精簡美股頁與港股市場連續性桌，並驗證公開GitHub Pages載入。
+- [ ] 確認新公司帳號 `williamyongbit` 的GitHub寫入授權與可用目標repository名稱。
+- [ ] 以非破壞方式將完整V3 Git歷史、main與gh-pages靜態版本同步至公司帳號，不刪除現有YongWilliam-ai來源。
+- [ ] 驗證公司帳號repository可讀、分支完整且後續V3維護入口明確。

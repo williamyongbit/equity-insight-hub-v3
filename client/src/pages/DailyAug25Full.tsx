@@ -3,7 +3,7 @@
  * Design contract: preserve the approved 24 Aug BIT white / black / blue editorial shell.
  * Evidence contract: 24 Aug U.S. close is completed; 25 Aug HSI is a timestamped intraday snapshot only.
  */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowRight, CalendarDays, CheckCircle2, CircleAlert, Download, ExternalLink, Info, Printer, TrendingUp } from "lucide-react";
 import usData from "../../../data/2026-08-25/us_market.json";
 import hkData from "../../../data/2026-08-25/hk_market.json";
@@ -44,6 +44,13 @@ export default function DailyAug25Full() {
   const [mode, setMode] = useState<Mode>("analysis");
   const [windowSize, setWindowSize] = useState<"oneDay" | "fiveDay" | "twentyDay">("oneDay");
   const t = ui[language], c = local[language];
+  useEffect(() => {
+    if (section !== "us") return;
+    const rejectedPair = Array.from(document.querySelectorAll("main section")).find(node => (node.textContent || "").includes("SPY 5D"));
+    rejectedPair?.remove();
+    const rejectedMacro = Array.from(document.querySelectorAll("main article")).find(node => (node.textContent || "").includes("72.7%") && (node.textContent || "").includes("ETF"));
+    rejectedMacro?.remove();
+  }, [language, section, windowSize]);
   const chrome = language === "EN" ? {
     overviewKicker: "DAILY / COMPLETED U.S. CLOSE → TODAY", usCard: "U.S. MARKET / 24 AUG CLOSE", hkCard: "HONG KONG / 25 AUG INTRADAY", usCardBody: "Technology and chip shares led the drag; the Dow stayed positive through financials.", hkCardBody: "10:36 HKT official snapshot only; no completed Hong Kong close is implied.", positioning: "RESEARCH POSITIONING / 24 AUG CLOSE → THIS WEEK", usKicker: "U.S. MARKET / COMPLETED 24 AUG", heatmap: "SECTOR HEATMAP / COMPLETED 24 AUG", breadth: "U.S. BREADTH PROXY / 24 AUG", notProved: "WHAT THE SESSION DID NOT PROVE", hkKicker: "HONG KONG / 25 AUG INTRADAY SNAPSHOT", hkDiscipline: "HONG KONG EVIDENCE DISCIPLINE", crossKicker: "CROSS-MARKET / CONDITIONAL READ-THROUGH", driver: "DRIVER CHAIN / CONDITIONAL", weekKicker: "THIS WEEK / VERIFICATION AGENDA", industry: "AI / MEMORY INDUSTRY SIGNALS", sources: "SOURCES / AUDIT TRAIL", reading: "READING MODE / CONSISTENCY LAYER"
   } : language === "TW" ? {

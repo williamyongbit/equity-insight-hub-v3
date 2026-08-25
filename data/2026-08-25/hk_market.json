@@ -8,6 +8,22 @@
     "change_pct": -0.15,
     "source": "Hang Seng Indexes official homepage; the provider disclosed a system outage and limited 15-minute updates."
   },
+  "late_session_checkpoint": {
+    "timestamp_hkt": "2026-08-25 15:54 HKT",
+    "source": "Hang Seng Indexes official homepage; its outage notice and limited 15-minute-update condition remained visible.",
+    "indices": {
+      "HSI": { "value": 25495.81, "change_pct": -0.08 },
+      "HSCEI": { "value": 8440.38, "change_pct": -0.37 },
+      "HSTECH": { "value": 4585.66, "change_pct": -0.18 },
+      "HSBIO": { "value": 15961.8, "change_pct": 2.46 }
+    },
+    "boundary": "Late-session official index observation only. Do not call it a completed Hong Kong close until post-close values, turnover and the relevant official daily records are available."
+  },
+  "post_close_checks": [
+    "Completed HSI/HSCEI/HSTECH/HSBIO values and market turnover",
+    "HKEX Historical Daily Stock Connect statistics for southbound flow",
+    "Company disclosures and sector-level evidence before attributing a driver"
+  ],
   "boundary": "This is an intraday snapshot, not a Hong Kong completed close. Do not infer the subsequent close, volume or driver from it.",
   "context": [
     {
