@@ -176,14 +176,20 @@
 
 ## Mentor Revision — Lean Overview, Rich Hong Kong and Company Domain
 
-- [ ] 移除總覽中「美股廣度代理」及「本時段未能證明的事情」兩個區塊，以及所有TW／CN／EN相應文案。
-- [ ] 將港股頁擴展為昨日完成收市、今日盤中快照、板塊／個股、南向／資金、跨市場傳導與下一驗證的完整雙時鐘分析。
-- [ ] 比較GitHub組織＋自訂域名、Vercel＋公司域名及其他公司化單一連結選項，明確區分公司帳號／域名註冊／企業授權的人工步驟。
-- [ ] 先完成本地三語預覽與桌面／行動版驗證，待William確認後才發布。
+- [x] 移除總覽中「美股廣度代理」及「本時段未能證明的事情」兩個區塊，以及所有TW／CN／EN相應文案。
+- [x] 將港股頁擴展為昨日完成收市、今日盤中快照、板塊／個股、南向／資金、跨市場傳導與下一驗證的完整雙時鐘分析。
+- [x] 比較GitHub組織＋自訂域名、Vercel＋公司域名及其他公司化單一連結選項，明確區分公司帳號／域名註冊／企業授權的人工步驟。
+- [x] 先完成本地三語預覽與桌面／行動版驗證，待William確認後才發布。
 
 ## Approved Publication and Company GitHub Maintenance Mirror
 
-- [ ] 發布已批准的精簡美股頁與港股市場連續性桌，並驗證公開GitHub Pages載入。
-- [ ] 確認新公司帳號 `williamyongbit` 的GitHub寫入授權與可用目標repository名稱。
-- [ ] 以非破壞方式將完整V3 Git歷史、main與gh-pages靜態版本同步至公司帳號，不刪除現有YongWilliam-ai來源。
-- [ ] 驗證公司帳號repository可讀、分支完整且後續V3維護入口明確。
+- [x] 發布已批准的精簡美股頁與港股市場連續性桌，並驗證公開GitHub Pages載入。
+- [x] 確認新公司帳號 `williamyongbit` 的GitHub寫入授權與可用目標repository名稱。
+- [x] 以非破壞方式將完整V3 Git歷史、main與gh-pages靜態版本同步至公司帳號，不刪除現有YongWilliam-ai來源。
+- [x] 驗證公司帳號repository可讀、分支完整且後續V3維護入口明確。
+
+## Approved Public Company Pages
+
+- [x] 將`williamyongbit/equity-insight-hub-v3`改為Public並以`gh-pages`分支啟用GitHub Pages。
+- [x] 發布已批准的精簡美股頁與港股市場連續性桌至公司公開Pages。
+- [x] 驗證公司公開根網址、版本庫、24日歷史入口與港股市場分析後交付。
