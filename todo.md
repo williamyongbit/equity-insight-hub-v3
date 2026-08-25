@@ -204,6 +204,6 @@
 
 ## Heatmap Clarification — Preserve Window Controls
 
-- [ ] 恢復美股熱力圖的1D／5D／20D切換，保留綠／灰／橙紅報酬語義。
-- [ ] 僅移除SVG「導出」按鈕及其功能，不移除熱力圖互動比較。
-- [ ] 刪除TW／CN／EN熱力圖說明中的「BIT Blue不代表表現」句子，完成本地預覽後待William確認再發布。
+- [x] 恢復美股熱力圖的1D／5D／20D切換，保留綠／灰／橙紅報酬語義。
+- [x] 僅移除SVG「導出」按鈕及其功能，不移除熱力圖互動比較。
+- [x] 刪除TW／CN／EN熱力圖說明中的「BIT Blue不代表表現」句子，完成本地預覽後待William確認再發布。
