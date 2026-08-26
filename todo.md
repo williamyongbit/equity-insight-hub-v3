@@ -227,3 +227,10 @@
 - [x] 將「板塊熱力圖」與「個股／產業鏈」在26日美股頁及完整PDF中的視覺順序上下對調，保留所有既有內容、1D／5D／20D切換與效能色彩語義。
 - [x] 將此閱讀順序設為永久BIT日報產品規則：先給出公司／產業鏈事實、含義與下一驗證，再以下方熱力圖作橫向板塊比較。
 - [x] 完成桌面、窄屏幕與PDF預覽檢查後，推送company main與gh-pages並公開驗證固定根網址。
+
+## Claude Cowork Migration — Finalized BIT Workflow
+
+- [x] 核實Claude Cowork、Skills、Research與GitHub整合的最新官方能力、權限與限制，並將舊個人repo遷移結論與現行company repo狀態分開。
+- [x] 打包可交給Claude的BIT日報工作流、產品規則、資料／發布防線與公司repo手冊，不把Manus專用指令或過時2026-08-24工程計畫誤當成現行日常流程。
+- [x] 產出Claude Cowork的分階段提示詞：一次性設定、每日研究、驗證／網站更新、GitHub與Pages發佈、失敗回退與首次受監督live run。
+- [x] 對照目前williamyongbit/equity-insight-hub-v3與2026-08-26已發布版本，檢查提示詞的資料邊界、URL、archive與部署規則，交付上傳清單與操作次序。
