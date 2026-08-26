@@ -221,3 +221,9 @@
 - [x] 產出取代legacy prompt的主提示模板，加入六個命令路由：side task、minor adjustment、External daily market news report、Escape、ideation、plan。
 - [x] 加入ideation→new trigger的升級閘門、資料／來源／港股雙時鐘／品質驗證／發布安全邊界。
 - [x] 驗證skill結構與觸發描述，並交付可安裝skill套件及主提示檔案。
+
+## Minor Adjustment — Heatmap and Industry-chain Reading Order
+
+- [x] 將「板塊熱力圖」與「個股／產業鏈」在26日美股頁及完整PDF中的視覺順序上下對調，保留所有既有內容、1D／5D／20D切換與效能色彩語義。
+- [x] 將此閱讀順序設為永久BIT日報產品規則：先給出公司／產業鏈事實、含義與下一驗證，再以下方熱力圖作橫向板塊比較。
+- [x] 完成桌面、窄屏幕與PDF預覽檢查後，推送company main與gh-pages並公開驗證固定根網址。

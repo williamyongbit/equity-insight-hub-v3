@@ -21,3 +21,7 @@ The full PDF-route accessibility snapshot was captured with zero application con
 The PDF snapshot confirms the print sequence in Traditional Chinese: completed session, macro/market drivers, 個股／產業鏈 cards, then the sector heatmap grid. The local English U.S. reader was subsequently reopened without application errors to test the retained 1D/5D/20D controls.
 
 The 5D window button was activated successfully after reordering. The local U.S. page retained its URL and produced zero application console errors with one non-blocking warning; a post-click snapshot was captured to verify the 5D values and active state.
+
+## Public GitHub Pages verification
+
+The cache-busted public English U.S. route for gh-pages deployment `8baeec0` loaded with zero application console errors and one non-blocking warning. A public accessibility snapshot was captured to confirm that the reordered sequence is served at the fixed company root.
