@@ -207,3 +207,17 @@
 - [x] 恢復美股熱力圖的1D／5D／20D切換，保留綠／灰／橙紅報酬語義。
 - [x] 僅移除SVG「導出」按鈕及其功能，不移除熱力圖互動比較。
 - [x] 刪除TW／CN／EN熱力圖說明中的「BIT Blue不代表表現」句子，完成本地預覽後待William確認再發布。
+
+## BIT Daily Market Intelligence — 2026-08-26
+
+- [x] 完整提取William提供的兩份8月26日外部材料，對照25日已定稿thesis與所有未核實／未完成條件。
+- [x] 用Tier 1／Tier 2來源核實8月25日美股收市、收益率、能源／地緣、半導體／NVIDIA、宏觀日程及香港市場完成／盤中資料。
+- [x] 建立2026-08-26結構化資料、全量TW／CN／EN內容、This Week驗證、來源審計及版本庫entry。
+- [x] 驗證固定root、歷史、1D／5D／20D熱力圖、完整PDF、六區雙模式、桌面／iPhone後發布公司網站。
+
+## Reusable BIT Daily Market Intelligence Skill
+
+- [x] 建立新的可重用skill，固化24–25日定稿的研究、網站、archive、三語、PDF、跨裝置與內部披露標準。
+- [x] 產出取代legacy prompt的主提示模板，加入六個命令路由：side task、minor adjustment、External daily market news report、Escape、ideation、plan。
+- [x] 加入ideation→new trigger的升級閘門、資料／來源／港股雙時鐘／品質驗證／發布安全邊界。
+- [x] 驗證skill結構與觸發描述，並交付可安裝skill套件及主提示檔案。

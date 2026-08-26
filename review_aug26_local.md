@@ -25,3 +25,13 @@ After shortening the mobile report-boundary line and localising the Hong Kong li
 The local Traditional Chinese `?date=2026-08-26&lang=TW&export=pdf` route loaded without application console errors and a full accessibility snapshot was captured for the six-section check. The PDF route is a normal render with a visible print action; it does not auto-trigger a browser print dialog.
 
 After the print-only revision, the same route reloaded successfully with HTTP 304, zero application console errors and one non-blocking warning. A final full snapshot was captured to verify that the six report sections remained available without report-navigation controls in the print document.
+
+## Public GitHub Pages verification
+
+The cache-busted public URL using gh-pages deployment `c2c6f40` loaded at the company fixed root on 26 Aug 2026 with zero application console errors and one non-blocking warning. However, its captured accessibility snapshot still showed the prior **25 August** bundle. This is an observed Pages/edge propagation state, not evidence of the 26 August public release; a later public re-check is required before completion is claimed.
+
+A second cache-busted public request (`r2`) also loaded with zero application console errors and one non-blocking warning. Its detailed snapshot is retained for a definitive date/content check before the deployment can be marked public-ready.
+
+The second public snapshot confirmed that the fixed root now serves the **26 August** report: its headline, 25 August completed U.S. cards and 26 August 10:42 HKT Hong Kong card were all present. The public `date=2026-08-25` English historical route then loaded successfully with zero application console errors and one non-blocking warning, confirming the immediate prior edition remains addressable.
+
+The public 24 August Traditional Chinese weekend route and 21 August English historical route also loaded successfully. Both recorded zero application console errors and one non-blocking warning; the 21 August page returned its dedicated historical title. The fixed root and all three retained dated editions are therefore publicly addressable.
