@@ -1,0 +1,21 @@
+{
+  "report_date": "2026-08-26",
+  "latest_completed_session": {"date": "2026-08-25", "market": "U.S. regular session", "timezone": "America/New_York"},
+  "index_close": {
+    "Dow": {"value": 53577.4, "change_pct": 0.3},
+    "S&P 500": {"value": 7677.24, "change_pct": 0.32},
+    "Nasdaq": {"value": 26151.3, "change_pct": 0.66}
+  },
+  "volatility": {"vix_close": 15.45, "source_type": "Cboe official daily close"},
+  "treasury_par_yields": {"two_year_pct": 3.89, "ten_year_pct": 4.64, "thirty_year_pct": 5.17, "source_type": "U.S. Treasury daily par curve"},
+  "market_drivers": [
+    {"status": "reported", "item": "Technology and semiconductor rebound", "evidence": "Reuters reported Nvidia +2.2% and SOX about +1.4%; this is a market explanation, not sole causality."},
+    {"status": "official", "item": "Lower daily Treasury par yields", "evidence": "2Y 3.89%, 10Y 4.64%, 30Y 5.17%; daily par rates are not intraday prints."},
+    {"status": "official", "item": "VIX close", "evidence": "Cboe VIX closed 15.45, down from 15.85 on 24 Aug."}
+  ],
+  "companies": [
+    {"ticker": "NVDA", "reaction": "+2.2% reported", "fact": "Nvidia ended a reported seven-session decline before its scheduled FY27 Q2 release.", "watch": "Revenue, data-centre guidance, Blackwell delivery cadence and forward outlook remain pending at this cutoff."},
+    {"ticker": "Semiconductors", "reaction": "SOX about +1.4% reported", "fact": "The session showed an index-level rebound; no unsupported exact close is inserted.", "watch": "Separate broad risk appetite from company-specific evidence after Nvidia results."},
+    {"ticker": "NVDA / AMD", "reaction": "Official product notices", "fact": "Nvidia announced Jetson Orin Nano 2; AMD announced UCIe capability for selected Versal RF Series devices.", "watch": "Announcements are product-roadmap evidence, not proof of same-day price causality."}
+  ]
+}

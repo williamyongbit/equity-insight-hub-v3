@@ -1,0 +1,26 @@
+{
+  "report_date": "2026-08-26",
+  "previous_completed_session": {
+    "date": "2026-08-25",
+    "source_tier": "Tier 2 market report; official historical close table unavailable in this run",
+    "indices": {
+      "HSI": {"value": 25511.1, "change_pct": -0.02},
+      "HSCEI": {"value": 8445.37, "change_pct": -0.31},
+      "HSTECH": {"value": 4588.54, "change_pct": -0.12}
+    },
+    "turnover_hkd_bn": 254.079
+  },
+  "intraday_snapshot": {
+    "timestamp_hkt": "2026-08-26 10:42 HKT",
+    "source_tier": "Tier 1 Hang Seng Indexes official page; 15-minute limited update during disclosed system outage",
+    "indices": {
+      "HSI": {"value": 25753.59, "change_pct": 0.95},
+      "HSCEI": {"value": 8571.22, "change_pct": 1.49},
+      "HSTECH": {"value": 4663.66, "change_pct": 1.64},
+      "HSBIO": {"value": 16311.0, "change_pct": 2.11}
+    },
+    "limitation": "Intraday snapshot only; not a completed close, turnover, southbound-flow or single-driver conclusion."
+  },
+  "post_close_checks": ["Official completed index values", "HKEX turnover and Historical Daily Stock Connect data", "Company disclosures and relative sector performance"],
+  "southbound_status": "Pending official historical daily confirmation; no estimate inserted."
+}

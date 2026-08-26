@@ -1,0 +1,10 @@
+{
+  "report_date": "2026-08-26",
+  "thesis": "The 25 Aug U.S. rebound lowered immediate duration pressure, but its durability remains conditional on scheduled macro results and Nvidia evidence rather than a one-session price move.",
+  "this_week": [
+    {"id": "bea", "when": "26 Aug 08:30 ET / 20:30 HKT", "event": "BEA GDP second estimate and July Personal Income and Outlays", "boundary": "Official schedule verified; data results were not available at the HKT report cutoff.", "positive": "Growth and inflation evidence reduce the need for a renewed long-yield risk premium.", "negative": "Inflation or spending evidence challenges the lower-yield valuation repair."},
+    {"id": "nvda", "when": "26 Aug about 13:20 PT release; 14:00 PT call / 27 Aug about 04:20–05:00 HKT", "event": "NVIDIA FY27 Q2", "boundary": "Officially scheduled; results, guidance and after-hours reaction are pending.", "positive": "Data-centre demand, delivery cadence and forward guidance support the AI-infrastructure thesis.", "negative": "Any demand, supply, financing or outlook caution increases concentration risk in AI hardware."},
+    {"id": "jackson", "when": "27–29 Aug", "event": "Jackson Hole Economic Policy Symposium", "boundary": "Official dates and theme are verified; Kevin Warsh exact official speaking time was not confirmed in the read agenda.", "positive": "Policy communication eases long-rate and risk-premium pressure without weakening growth evidence.", "negative": "Policy/fiscal uncertainty revives duration and valuation pressure."},
+    {"id": "hk", "when": "26 Aug post-close / next Hong Kong opening", "event": "Hong Kong close, turnover and Stock Connect confirmation", "boundary": "The 10:42 HKT index reading is intraday only; official post-close flow remains pending.", "positive": "HSTECH/HSCEI relative strength is confirmed by completed close, turnover and company evidence.", "negative": "An intraday rise reverses into a weaker completed close or lacks flow/sector confirmation."}
+  ]
+}

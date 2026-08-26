@@ -8,14 +8,15 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import FullReportAug21 from "./pages/FullReportAug21";
 import V3PreviewAug21 from "./pages/V3PreviewAug21";
 import WeekendAug24Full from "./pages/WeekendAug24Full";
-import DailyAug25Full from "./pages/DailyAug25Full";
 import DailyHubAug25 from "./pages/DailyHubAug25";
+import DailyHubAug26 from "./pages/DailyHubAug26";
 
 function RootRoute() {
   const date = new URLSearchParams(window.location.search).get("date");
   if (date === "2026-08-21") return <FullReportAug21 />;
   if (date === "2026-08-24") return <WeekendAug24Full />;
-  return <DailyHubAug25 />;
+  if (date === "2026-08-25") return <DailyHubAug25 />;
+  return <DailyHubAug26 />;
 }
 
 function Routes() {

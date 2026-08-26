@@ -1,6 +1,16 @@
 {
-  "latest": "2026-08-25",
+  "latest": "2026-08-26",
   "editions": [
+    {
+      "date": "2026-08-26",
+      "type": "daily",
+      "label": "26 Aug · Daily",
+      "summary": {
+        "TW": "最新：美股8月25日完成反彈／港股10:42 HKT盤中快照／NVIDIA與BEA待驗證",
+        "CN": "最新：美股8月25日完成反弹／港股10:42 HKT盘中快照／NVIDIA与BEA待验证",
+        "EN": "Latest: 25 Aug U.S. rebound / 10:42 HKT Hong Kong intraday / NVIDIA and BEA pending"
+      }
+    },
     {
       "date": "2026-08-25",
       "type": "daily",

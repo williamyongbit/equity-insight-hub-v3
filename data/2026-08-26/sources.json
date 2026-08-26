@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {"id": 1, "tier": "Tier 1", "market": "U.S.", "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv", "label": {"TW": "Cboe VIX歷史日度CSV", "CN": "Cboe VIX历史日度CSV", "EN": "Cboe VIX daily history CSV"}},
+    {"id": 2, "tier": "Tier 1", "market": "Rates", "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv", "label": {"TW": "美國財政部日度國債平價收益率曲線", "CN": "美国财政部日度国债平价收益率曲线", "EN": "U.S. Treasury daily par yield curve"}},
+    {"id": 3, "tier": "Tier 2", "market": "U.S.", "url": "https://www.reuters.com/business/us-stock-futures-rise-tech-rebound-before-nvidia-inflation-tests-2026-08-25/", "label": {"TW": "Reuters：科技反彈、NVIDIA與通脹測試前的美股", "CN": "Reuters：科技反弹、NVIDIA与通胀测试前的美股", "EN": "Reuters: U.S. technology rebound before Nvidia and inflation tests"}},
+    {"id": 4, "tier": "Tier 1", "market": "Hong Kong", "url": "https://www.hsi.com.hk/", "label": {"TW": "恒生指數公司：有限15分鐘更新的官方指數快照", "CN": "恒生指数公司：有限15分钟更新的官方指数快照", "EN": "Hang Seng Indexes: limited 15-minute official snapshot"}},
+    {"id": 5, "tier": "Tier 1", "market": "Company", "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx", "label": {"TW": "NVIDIA FY27 Q2官方投資者活動頁", "CN": "NVIDIA FY27 Q2官方投资者活动页", "EN": "NVIDIA FY27 Q2 official investor event"}},
+    {"id": 6, "tier": "Tier 1", "market": "Company", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-jetson-orin-nano-2-robotics-computer-to-redefine-entry-level-edge-ai", "label": {"TW": "NVIDIA Jetson Orin Nano 2官方公告", "CN": "NVIDIA Jetson Orin Nano 2官方公告", "EN": "NVIDIA Jetson Orin Nano 2 official announcement"}},
+    {"id": 7, "tier": "Tier 1", "market": "Macro", "url": "https://www.bea.gov/news/schedule", "label": {"TW": "BEA發佈日程", "CN": "BEA发布日期程", "EN": "BEA release schedule"}},
+    {"id": 8, "tier": "Tier 1", "market": "Macro", "url": "https://www.conference-board.org/topics/consumer-confidence/", "label": {"TW": "Conference Board消費者信心", "CN": "Conference Board消费者信心", "EN": "Conference Board Consumer Confidence"}},
+    {"id": 9, "tier": "Tier 1", "market": "Geopolitics", "url": "https://www.fm.gov.om/en/53722/", "label": {"TW": "阿曼外交部：伊朗磋商與提議框架", "CN": "阿曼外交部：伊朗磋商与提议框架", "EN": "Oman MFA: Iran consultations and proposed framework"}},
+    {"id": 10, "tier": "Tier 1", "market": "Trade", "url": "https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/canadas-response-us-tariffs/complete-list-us-products-subject-to-counter-tariffs.html", "label": {"TW": "加拿大財政部反制關稅完整清單", "CN": "加拿大财政部反制关税完整清单", "EN": "Canada Finance complete counter-tariff list"}}
+  ]
+}

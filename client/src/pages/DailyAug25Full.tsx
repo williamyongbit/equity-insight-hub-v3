@@ -9,7 +9,7 @@ import usData from "../../../data/2026-08-25/us_market.json";
 import hkData from "../../../data/2026-08-25/hk_market.json";
 import thesisData from "../../../data/2026-08-25/thesis.json";
 import sourceData from "../../../data/2026-08-25/sources.json";
-import detailData from "../../../data/2026-08-25/market_analytics_detail.json";
+import detailData from "../../../data/2026-08-24/market_analytics_detail.json";
 
 type Language = "TW" | "CN" | "EN";
 type Section = "overview" | "us" | "hk" | "cross" | "week" | "sources";
