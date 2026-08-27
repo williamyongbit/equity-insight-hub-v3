@@ -1,0 +1,20 @@
+{
+  "report_date": "2026-08-27",
+  "latest_completed_session": {"date": "2026-08-26", "market": "U.S. regular session", "timezone": "America/New_York"},
+  "index_close": {
+    "Dow": {"value": 53463.88, "change_pct": -0.21},
+    "S&P 500": {"value": 7675.70, "change_pct": -0.02},
+    "Nasdaq": {"value": 26130.20, "change_pct": -0.08}
+  },
+  "treasury_par_yields": {"two_year_pct": 4.19, "ten_year_pct": 4.66, "thirty_year_pct": 5.18, "source_type": "U.S. Treasury daily par curve, 26 Aug 2026"},
+  "market_drivers": [
+    {"status": "official", "item": "July PCE release", "evidence": "BEA: headline PCE +0.2% m/m and +3.7% y/y; core PCE +0.2% m/m and +3.3% y/y."},
+    {"status": "reported", "item": "Cautious pre-results positioning", "evidence": "Reuters reported modestly lower U.S. indices as investors assessed the inflation release and awaited NVIDIA's post-close results."},
+    {"status": "official", "item": "Treasury daily par curve", "evidence": "26 Aug completed-session par yields: 2Y 4.19%, 10Y 4.66%, 30Y 5.18%; not intraday quotes."}
+  ],
+  "companies": [
+    {"ticker": "NVDA", "reaction": "about -1.6% regular session; about +4% after results", "fact": "NVIDIA reported FY27 Q2 revenue of $96.221bn and Data Center revenue of $89.0bn after the 26 Aug U.S. close.", "watch": "27 Aug cash-session price discovery, Q3 $108bn ±2% revenue outlook, margin path and execution against the disclosed no-China-Data-Center-compute assumption."},
+    {"ticker": "AI infrastructure", "reaction": "post-close company evidence", "fact": "NVIDIA disclosed Q3 gross-margin outlook of 74.0% ±50bp and CFO commentary needs to be separated from formal line-item guidance.", "watch": "Whether the next regular session differentiates reported demand evidence from supply constraints, financing and customer-capex risk."},
+    {"ticker": "Energy / Hormuz", "reaction": "Brent -0.84%; WTI -0.16%", "fact": "Reuters reported 26 Aug crude settlements of $87.84/bbl for Brent and $82.23/bbl for WTI while Iran–Oman terms remained unfinished.", "watch": "Verified shipping-flow and agreement details; do not infer normal navigation or a final accord from negotiations."}
+  ]
+}

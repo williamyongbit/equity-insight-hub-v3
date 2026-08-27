@@ -1,0 +1,15 @@
+{
+  "report_date": "2026-08-27",
+  "thesis": "The 26 Aug U.S. session traded a hotter-than-expected PCE print and pre-NVIDIA caution; NVIDIA's post-close results now shift the AI question from expectation to next-session price discovery, while Hong Kong remains a timestamped intraday observation until the official close and flow data arrive.",
+  "prior_thesis_audit": [
+    {"id": "bea", "status": "confirmed", "detail": "BEA released the July Personal Income and Outlays report and Q2 GDP second estimate at 08:30 EDT on 26 Aug."},
+    {"id": "nvda", "status": "confirmed", "detail": "NVIDIA released FY27 Q2 results after the 26 Aug U.S. close; the prior pending boundary is resolved."},
+    {"id": "hk", "status": "unresolved", "detail": "26 Aug completed Hong Kong turnover and Stock Connect data were not independently captured in this run and are not inferred."}
+  ],
+  "this_week": [
+    {"id": "nvda-price", "when": "27 Aug 2026 U.S. regular session / 21:30 HKT open", "event": "NVIDIA earnings price discovery", "boundary": "Results are completed; regular-session reaction remains a future market test at this HKT cutoff.", "positive": "Price action holds after the open while investors continue to distinguish formal Q3 guidance, data-center revenue and execution evidence.", "negative": "A reversal or broad AI-hardware weakness despite the release highlights valuation, margin, supply or financing concerns."},
+    {"id": "hk-close", "when": "27 Aug 2026 after 16:00 HKT", "event": "Hong Kong completed close, turnover and Stock Connect confirmation", "boundary": "The 14:04 HKT index snapshot is not a close; turnover and southbound data remain pending.", "positive": "Completed HSTECH / HSCEI performance and verified flow data align with the intraday direction.", "negative": "The intraday snapshot fades by the close or lacks turnover / flow confirmation."},
+    {"id": "jackson", "when": "28 Aug 2026, 10:00 EDT / 22:00 HKT", "event": "Chairman Kevin Warsh keynote at Jackson Hole", "boundary": "Officially scheduled by the Kansas City Fed and the Federal Reserve; no speech outcome is known.", "positive": "Communication reduces uncertainty around inflation, policy and long-duration risk premia without weakening growth evidence.", "negative": "Communication renews inflation, policy or duration pressure that challenges high-valuation technology multiples."},
+    {"id": "hormuz", "when": "Continuing / verify primary official updates", "event": "Hormuz negotiation and shipping-flow status", "boundary": "Reuters reported negotiations remained unfinished and traffic constrained; no operating corridor or final agreement is assumed.", "positive": "Credible verified arrangements and higher observable traffic reduce disruption uncertainty.", "negative": "Talks stall, security incidents rise or freight/energy conditions tighten again."}
+  ]
+}

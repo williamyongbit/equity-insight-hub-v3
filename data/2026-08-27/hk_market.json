@@ -1,0 +1,21 @@
+{
+  "report_date": "2026-08-27",
+  "previous_completed_session": {
+    "date": "2026-08-26",
+    "source_tier": "Tier 2 continuity context: RTTNews described the HSI as just above the 25,650 plateau after it snapped a two-day decline; exact completed index, turnover and southbound values were not independently captured in this run.",
+    "status_summary": "Use only the qualified prior-close context; do not insert synthetic exact close, turnover or Southbound figures."
+  },
+  "intraday_snapshot": {
+    "timestamp_hkt": "2026-08-27 14:04 HKT",
+    "source_tier": "Tier 1 Hang Seng Indexes official homepage",
+    "indices": {
+      "HSI": {"value": 25560.25, "change_pct": -0.36},
+      "HSCEI": {"value": 8492.58, "change_pct": -0.48},
+      "HSTECH": {"value": 4622.82, "change_pct": -0.07},
+      "HSBIO": {"value": 16197.24, "change_pct": 0.37}
+    },
+    "limitation": "Intraday snapshot only; not a completed close, turnover, Stock Connect flow or single-driver conclusion."
+  },
+  "post_close_checks": ["Official completed index values", "HKEX turnover and Historical Daily Stock Connect data", "Company disclosures and relative sector performance", "Whether HSTECH’s intraday move confirms or fades by the close"],
+  "southbound_status": "Pending official Historical Daily confirmation; no estimate inserted."
+}

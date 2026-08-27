@@ -234,3 +234,10 @@
 - [x] 打包可交給Claude的BIT日報工作流、產品規則、資料／發布防線與公司repo手冊，不把Manus專用指令或過時2026-08-24工程計畫誤當成現行日常流程。
 - [x] 產出Claude Cowork的分階段提示詞：一次性設定、每日研究、驗證／網站更新、GitHub與Pages發佈、失敗回退與首次受監督live run。
 - [x] 對照目前williamyongbit/equity-insight-hub-v3與2026-08-26已發布版本，檢查提示詞的資料邊界、URL、archive與部署規則，交付上傳清單與操作次序。
+
+## External Daily Market News Report — 27 August 2026
+
+- [ ] 完整提取William提供的兩份8月27日外部材料，記錄圖片／文字可讀範圍，並以26日已發布thesis為起點審核前一日驗證項。
+- [ ] 以實際Asia/Hong_Kong執行時間、Tier 1／Tier 2來源核實8月26日美股收市、8月27日盤後英偉達業績、PCE／利率、宏觀日程、香港市場完成／盤中時段及關鍵跨市場聲明。
+- [ ] 建立2026-08-27結構化資料、完整TW／CN／EN六節雙模式報告、可審計來源／未證實項、熱力圖資料與版本庫entry；保留歷史及固定root。
+- [ ] 跑日期驗證、資料／型別／建置、桌面／iPhone／PDF／語言／模式／熱力圖／版本庫測試；通過後才更新company main與gh-pages，並用公開cache-busted根網址驗證。

@@ -1,6 +1,16 @@
 {
-  "latest": "2026-08-26",
+  "latest": "2026-08-27",
   "editions": [
+    {
+      "date": "2026-08-27",
+      "type": "daily",
+      "label": "27 Aug · Daily",
+      "summary": {
+        "TW": "最新：美股8月26日完成時段／NVIDIA FY27 Q2盤後結果／港股14:04 HKT盤中快照",
+        "CN": "最新：美股8月26日完成时段／NVIDIA FY27 Q2盘后结果／港股14:04 HKT盘中快照",
+        "EN": "Latest: 26 Aug U.S. close / NVIDIA FY27 Q2 post-close results / 14:04 HKT Hong Kong intraday"
+      }
+    },
     {
       "date": "2026-08-26",
       "type": "daily",
