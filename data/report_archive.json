@@ -1,6 +1,16 @@
 {
-  "latest": "2026-08-27",
+  "latest": "2026-08-28",
   "editions": [
+    {
+      "date": "2026-08-28",
+      "type": "daily",
+      "label": "28 Aug · Daily",
+      "summary": {
+        "TW": "最新：美股8月27日完成科技反彈／NVIDIA與Marvell官方披露／港股10:41 HKT盤中快照",
+        "CN": "最新：美股8月27日完成科技反弹／NVIDIA与Marvell官方披露／港股10:41 HKT盘中快照",
+        "EN": "Latest: 27 Aug U.S. technology rebound / NVIDIA and Marvell official disclosures / 10:41 HKT Hong Kong intraday"
+      }
+    },
     {
       "date": "2026-08-27",
       "type": "daily",

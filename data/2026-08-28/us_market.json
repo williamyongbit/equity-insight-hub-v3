@@ -1,0 +1,21 @@
+{
+  "report_date": "2026-08-28",
+  "latest_completed_session": {"date": "2026-08-27", "market": "U.S. regular session", "timezone": "America/New_York"},
+  "index_close": {
+    "Dow": {"value": 53569.44, "change_pct": 0.20},
+    "S&P 500": {"value": 7730.99, "change_pct": 0.72},
+    "Nasdaq": {"value": 26541.35, "change_pct": 1.57}
+  },
+  "vix": {"close": 14.51, "source_type": "Cboe VIX History, 27 Aug 2026 daily close"},
+  "treasury_par_yields": {"two_year_pct": 4.20, "ten_year_pct": 4.67, "thirty_year_pct": 5.19, "source_type": "U.S. Treasury daily par curve, 27 Aug 2026"},
+  "market_drivers": [
+    {"status": "reported", "item": "AI and technology participation", "evidence": "Reuters reported gains in NVIDIA, semiconductors, Salesforce and CrowdStrike, with the S&P 500 IT sector up 3.4%."},
+    {"status": "official", "item": "NVIDIA FY27 Q2 and Q3 outlook", "evidence": "NVIDIA reported FY27 Q2 revenue of $96.221bn, Data Center revenue of $89.0bn and Q3 revenue outlook of $108bn ±2%."},
+    {"status": "official", "item": "Rates and volatility", "evidence": "Treasury daily par yields were 2Y 4.20%, 10Y 4.67% and 30Y 5.19%; Cboe VIX daily close was 14.51. These are daily records, not intraday causality."}
+  ],
+  "companies": [
+    {"ticker": "NVDA", "reaction": "+8.7% reported", "fact": "Reuters reported a 27 Aug cash-session gain after NVIDIA's results and outlook; NVIDIA's own release reported $96.221bn Q2 revenue and a $108bn ±2% Q3 outlook.", "watch": "Whether price discovery remains supported by Data Center demand, the outlook, margin path and supply execution in the next regular session."},
+    {"ticker": "Software earnings", "reaction": "CRM +22.6%; CRWD +20.5% reported", "fact": "Reuters reported Salesforce raised annual forecasts and CrowdStrike raised annual revenue outlook after topping Q2 estimates.", "watch": "Whether application/software breadth persists beyond earnings-specific catalysts; individual company outcomes must remain separate."},
+    {"ticker": "MRVL", "reaction": "official post-close disclosure", "fact": "Marvell reported FY27 Q2 revenue of $2.739bn (+37% YoY), Data Center revenue growth of 46% YoY and Q3 revenue outlook of $3.150bn ±5% after the U.S. close.", "watch": "The next session's price discovery and the distinction between company-specific guidance, supply risks and broader AI-chain inference."}
+  ]
+}

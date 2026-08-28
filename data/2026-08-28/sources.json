@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {"id": 1, "tier": "Tier 1", "market": "Company", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027", "label": {"TW": "NVIDIA：FY27第二季官方業績公告", "CN": "NVIDIA：FY27第二季度官方业绩公告", "EN": "NVIDIA: FY27 Q2 official results release"}},
+    {"id": 2, "tier": "Tier 1", "market": "Company", "url": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results", "label": {"TW": "Marvell：FY27第二季官方業績公告", "CN": "Marvell：FY27第二季度官方业绩公告", "EN": "Marvell: FY27 Q2 official results release"}},
+    {"id": 3, "tier": "Tier 1", "market": "Macro", "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026", "label": {"TW": "BEA：2026年7月個人所得與支出", "CN": "BEA：2026年7月个人收入与支出", "EN": "BEA: Personal Income and Outlays, July 2026"}},
+    {"id": 4, "tier": "Tier 1", "market": "Rates", "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv", "label": {"TW": "美國財政部：8月27日日度國債平價收益率", "CN": "美国财政部：8月27日日度国债平价收益率", "EN": "U.S. Treasury: 27 Aug daily par yield curve"}},
+    {"id": 5, "tier": "Tier 1", "market": "Volatility", "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv", "label": {"TW": "Cboe：VIX歷史日度收市資料", "CN": "Cboe：VIX历史日度收市资料", "EN": "Cboe: VIX historical daily close data"}},
+    {"id": 6, "tier": "Tier 1", "market": "Hong Kong", "url": "https://www.hsi.com.hk/", "label": {"TW": "恒生指數公司：官方10:41 HKT盤中快照", "CN": "恒生指数公司：官方10:41 HKT盘中快照", "EN": "Hang Seng Indexes: official 10:41 HKT intraday snapshot"}},
+    {"id": 7, "tier": "Tier 1", "market": "Policy", "url": "https://www.kansascityfed.org/newsroom/2026-news-releases/kansas-city-fed-to-host-annual-jackson-hole-economic-policy-symposium-2026/", "label": {"TW": "堪薩斯城聯儲：2026年Jackson Hole官方日程", "CN": "堪萨斯城联储：2026年Jackson Hole官方日程", "EN": "Kansas City Fed: 2026 Jackson Hole official schedule"}},
+    {"id": 8, "tier": "Tier 2", "market": "U.S.", "url": "https://www.reuters.com/business/nasdaq-futures-take-lead-after-nvidia-forecast-refuels-ai-trade-2026-08-27/", "label": {"TW": "Reuters：8月27日美股收市、科技與油價背景", "CN": "Reuters：8月27日美股收市、科技与油价背景", "EN": "Reuters: 27 Aug U.S. close, technology and oil context"}}
+  ]
+}

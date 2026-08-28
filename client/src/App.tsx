@@ -11,6 +11,7 @@ import WeekendAug24Full from "./pages/WeekendAug24Full";
 import DailyHubAug25 from "./pages/DailyHubAug25";
 import DailyHubAug26 from "./pages/DailyHubAug26";
 import DailyHubAug27 from "./pages/DailyHubAug27";
+import DailyHubAug28 from "./pages/DailyHubAug28";
 
 function RootRoute() {
   const date = new URLSearchParams(window.location.search).get("date");
@@ -18,7 +19,8 @@ function RootRoute() {
   if (date === "2026-08-24") return <WeekendAug24Full />;
   if (date === "2026-08-25") return <DailyHubAug25 />;
   if (date === "2026-08-26") return <DailyHubAug26 />;
-  return <DailyHubAug27 />;
+  if (date === "2026-08-27") return <DailyHubAug27 />;
+  return <DailyHubAug28 />;
 }
 
 function Routes() {

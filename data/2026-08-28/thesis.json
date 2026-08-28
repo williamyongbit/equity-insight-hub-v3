@@ -1,0 +1,16 @@
+{
+  "report_date": "2026-08-28",
+  "thesis": "The 27 Aug U.S. cash session confirmed that NVIDIA's completed FY27 Q2 disclosure and forward outlook could re-open AI and software participation, while the official daily Treasury curve remained higher and Warsh's Jackson Hole remarks were still pending. Hong Kong is a timestamped morning snapshot, not a completed-market confirmation.",
+  "prior_thesis_audit": [
+    {"id": "nvda-cash", "status": "confirmed", "detail": "Reuters reported NVIDIA shares rose 8.7% during the 27 Aug U.S. cash session after the FY27 Q2 results and outlook."},
+    {"id": "ai-breadth", "status": "partially_confirmed", "detail": "Reuters reported semiconductor, Salesforce and CrowdStrike gains, but broader sector participation was mixed; NYSE decliners outnumbered advancers."},
+    {"id": "rates", "status": "unresolved", "detail": "Treasury daily par yields rose by 1bp on 27 Aug across the 2Y, 10Y and 30Y tenors versus 26 Aug; the policy interpretation remains conditional on the pending speech."},
+    {"id": "hk-close", "status": "unresolved", "detail": "No independently verified 27 Aug Hong Kong close, turnover or Southbound figure was captured in the present evidence pack."}
+  ],
+  "this_week": [
+    {"id": "warsh", "when": "28 Aug 2026, 10:00 EDT / 22:00 HKT", "event": "Chair Kevin Warsh address at Jackson Hole", "boundary": "Officially scheduled by the Kansas City Fed; remarks and market reaction are not known at the 10:40 HKT report cutoff.", "positive": "Communication reduces uncertainty about inflation, policy or duration risk without contradicting current growth evidence.", "negative": "Communication raises inflation, policy or duration pressure that challenges long-duration technology valuations."},
+    {"id": "nvda-follow-through", "when": "28 Aug 2026 U.S. regular session / 21:30 HKT open", "event": "NVIDIA and AI-chain follow-through", "boundary": "27 Aug cash-session reaction is completed; the next U.S. session is a separate future test.", "positive": "Price discovery remains linked to official Data Center results and Q3 outlook, rather than broad unverified claims.", "negative": "A reversal or narrower participation places focus on valuation, margins, supply or client-capex constraints."},
+    {"id": "marvell", "when": "28 Aug 2026 U.S. regular session", "event": "Marvell post-results price discovery", "boundary": "FY27 Q2 results and Q3 outlook were disclosed after the 27 Aug cash close; no after-hours move is presented as a verified fact.", "positive": "The market differentiates official data-centre revenue growth and guidance from broader chain extrapolation.", "negative": "Price action or commentary emphasizes concentration, supply, customer demand or valuation risks."},
+    {"id": "hk-close", "when": "28 Aug 2026 after 16:00 HKT", "event": "Hong Kong completed close, turnover and Stock Connect confirmation", "boundary": "The 10:41 HKT official snapshot is not a close; turnover and Southbound data remain pending.", "positive": "Completed HSI / HSCEI / HSTECH direction and official activity data align with the morning observation.", "negative": "Morning gains fade or cannot be supported by completed turnover and official flow data."}
+  ]
+}
