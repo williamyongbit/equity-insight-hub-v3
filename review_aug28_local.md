@@ -25,3 +25,9 @@ The initial printable Traditional Chinese review surfaced three generic English 
 ## Outstanding evidence limits
 
 Warsh’s 28 August 22:00 HKT remarks remain future/pending at the report cutoff. Hormuz shipping-operation details, several commodity/crypto claims and uncaptured Hong Kong completed-session values remain outside the report’s factual conclusions.
+
+## Public GitHub Pages verification
+
+The cache-busted company URL `?v=5ff5efc-r1&date=2026-08-28&market=overview&lang=CN` loaded the 28 August edition from the fixed root with no application console errors. The public header states the 28 August 10:40 HKT cutoff, 27 August U.S. completed close and 10:41 HKT Hong Kong intraday state.
+
+The following dated public history routes also loaded successfully without application console errors: 27 August (EN), 26 August (TW), 25 August (CN), 24 August (TW) and 21 August (EN). The 28 August fixed-root release did not overwrite the retained reports.

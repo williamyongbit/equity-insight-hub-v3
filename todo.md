@@ -244,7 +244,7 @@
 
 ## External Daily Market News Report — 28 August 2026
 
-- [ ] 完整提取William提供的8月28日外部材料，將其與過時的pasted_content_19.txt分開，並以27日thesis的NVIDIA現貨反應、利率與香港收市驗證項為起點。
-- [ ] 以實際Asia/Hong_Kong執行時間和Tier 1／Tier 2來源核實8月27日美股完成收市、NVIDIA／Marvell披露、利率／聯儲／Jackson Hole、油價／Hormuz及香港完成／盤中資料。
-- [ ] 建立2026-08-28可審計資料、熱力圖輸入、全量TW／CN／EN六節雙模式內容、版本庫entry及固定root路由，保留全部歷史報告與已批准產品順序。
-- [ ] 執行日期資料、型別及生產建置驗證，核對桌面／390px／PDF／語言／模式／熱力圖／版本庫後，才推送company main與gh-pages並公開驗證快取繞過固定root。
+- [x] 完整提取William提供的8月28日外部材料，將其與過時的pasted_content_19.txt分開，並以27日thesis的NVIDIA現貨反應、利率與香港收市驗證項為起點。
+- [x] 以實際Asia/Hong_Kong執行時間和Tier 1／Tier 2來源核實8月27日美股完成收市、NVIDIA／Marvell披露、利率／聯儲／Jackson Hole、油價／Hormuz及香港完成／盤中資料。
+- [x] 建立2026-08-28可審計資料、熱力圖輸入、全量TW／CN／EN六節雙模式內容、版本庫entry及固定root路由，保留全部歷史報告與已批准產品順序。
+- [x] 執行日期資料、型別及生產建置驗證，核對桌面／390px／PDF／語言／模式／熱力圖／版本庫後，才推送company main與gh-pages並公開驗證快取繞過固定root。
