@@ -248,3 +248,10 @@
 - [x] 以實際Asia/Hong_Kong執行時間和Tier 1／Tier 2來源核實8月27日美股完成收市、NVIDIA／Marvell披露、利率／聯儲／Jackson Hole、油價／Hormuz及香港完成／盤中資料。
 - [x] 建立2026-08-28可審計資料、熱力圖輸入、全量TW／CN／EN六節雙模式內容、版本庫entry及固定root路由，保留全部歷史報告與已批准產品順序。
 - [x] 執行日期資料、型別及生產建置驗證，核對桌面／390px／PDF／語言／模式／熱力圖／版本庫後，才推送company main與gh-pages並公開驗證快取繞過固定root。
+
+## External Daily Market News Report — 1 September 2026
+
+- [ ] 完整提取William提供的9月1日外部材料，並以8月28日thesis的AI現貨延續、Warsh講話及香港完成資料驗證項為起點。
+- [ ] 以實際Asia/Hong_Kong執行時間及Tier 1／Tier 2來源核實8月31日美股完成收市、地緣／油價、利率／政策、AI／半導體與香港市場狀態；不將外部材料或搜索摘要當作事實。
+- [ ] 建立2026-09-01可審計資料、熱力圖輸入、完整TW／CN／EN六節雙模式內容、版本庫entry與固定root路由；保留所有歷史版本和既定產品順序。
+- [ ] 完成日期資料、型別、生产建置、桌面／390px／PDF／语种／模式／热力图／版本库检查后，才推送company main与gh-pages并公开验证缓存绕过固定root。

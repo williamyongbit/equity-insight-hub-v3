@@ -1,0 +1,22 @@
+{
+  "report_date": "2026-09-01",
+  "completed_session": {"date": "2026-08-31", "market": "U.S. regular session"},
+  "index_close": {
+    "Dow": {"value": 53185.90, "change_pct": -0.70},
+    "S&P 500": {"value": 7686.14, "change_pct": -0.33},
+    "Nasdaq": {"value": 26370.89, "change_pct": -0.12}
+  },
+  "vix": {"value": 14.92, "source_id": "cboe-vix", "note": "Official Cboe daily close."},
+  "treasury_daily_par_yields": {"date": "2026-08-31", "two_year": 4.34, "ten_year": 4.75, "thirty_year": 5.25, "source_id": "treasury-curve", "note": "Official daily par-yield reference rates, not intraday traded yields."},
+  "drivers": [
+    {"id": "geopolitical", "tier": "Tier 2", "fact": "Reuters reported that U.S. forces struck two Iranian launchers on Larak Island on 30 August; AP and CNBC reported higher crude and weaker broad U.S. equity indices in the 31 August session."},
+    {"id": "rates", "tier": "Tier 1", "fact": "The Treasury daily par curve was 4.34% (2Y), 4.75% (10Y) and 5.25% (30Y) on 31 August."},
+    {"id": "breadth", "tier": "Public data fallback", "fact": "The 11-sector ETF proxy showed 18.2% positive one-day breadth; Energy was the only positive sector ETF among the daily proxy basket."}
+  ],
+  "companies": [
+    {"ticker": "NVDA", "cash_move": "+1.48% reported", "source_id": "reuters-session", "boundary": "Tier 2 cash-session market reporting; do not treat as evidence of a whole-chain trend."},
+    {"ticker": "TSLA", "cash_move": "+5.51% reported", "source_id": "reuters-session", "boundary": "Tier 2 cash-session market reporting."},
+    {"ticker": "AMZN", "cash_move": "-2.5% reported", "source_id": "ap-session", "boundary": "The FTC and 22-state action is an allegation; Amazon disputed the case."},
+    {"ticker": "PCG", "cash_move": "-20.1% reported", "source_id": "ap-session", "boundary": "AP attributed the move to California wildfire-legislation reports; no sector-wide utility conclusion is drawn."}
+  ]
+}

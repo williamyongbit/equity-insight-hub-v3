@@ -1,6 +1,16 @@
 {
-  "latest": "2026-08-28",
+  "latest": "2026-09-01",
   "editions": [
+    {
+      "date": "2026-09-01",
+      "type": "daily",
+      "label": "01 Sep · Daily",
+      "summary": {
+        "TW": "最新：美股8月31日完成時段／能源相對強勢與選擇性AI參與／港股10:09 HKT盤中快照",
+        "CN": "最新：美股8月31日完成时段／能源相对强势与选择性AI参与／港股10:09 HKT盘中快照",
+        "EN": "Latest: 31 Aug U.S. session / energy strength and selective AI participation / 10:09 HKT Hong Kong intraday"
+      }
+    },
     {
       "date": "2026-08-28",
       "type": "daily",

@@ -1,0 +1,15 @@
+{
+  "report_date": "2026-09-01",
+  "thesis": "The 31 August U.S. session traded higher energy and elevated daily Treasury reference yields against a more cautious broad-equity tape; NVIDIA’s relative gain was selective evidence of continued AI interest, not a broad risk-on reversal. The next validation is whether oil/geopolitical developments, Hong Kong’s completed close and the 4 September U.S. employment release align or conflict with that split signal.",
+  "prior_thesis_audit": [
+    {"id": "nvda-follow-through", "status": "partially_confirmed", "detail": "NVIDIA rose about 1.5% in the 31 August cash session, but broad U.S. indices fell and the 11-sector proxy breadth was 18.2%."},
+    {"id": "warsh", "status": "confirmed", "detail": "CNBC reported Warsh’s Jackson Hole discussion addressed inflation and financial conditions; externally supplied Trump/Bessent dialogue was not independently verified and is not used."},
+    {"id": "rates", "status": "confirmed", "detail": "Treasury daily par yields stood at 4.34% (2Y), 4.75% (10Y) and 5.25% (30Y) on 31 August."},
+    {"id": "hk-close", "status": "partially_confirmed", "detail": "CNBC reported the 31 August HSI close as flat at 25,566.99, but turnover and Southbound data were not independently captured."}
+  ],
+  "this_week": [
+    {"id": "oil-hormuz", "when": "1 Sep 2026 U.S. regular session", "event": "Oil, Hormuz and energy-equity response", "boundary": "Reuters confirms the 30 August Larak action; developments and price response remain conditional. No operating-corridor or shipping-normalisation conclusion is assumed.", "positive": "Attributable de-escalation and lower energy risk premium occur without an additional broad risk-off response.", "negative": "Additional attributable escalation coincides with higher crude, duration pressure and broad risk-asset deterioration."},
+    {"id": "hk-close", "when": "1 Sep 2026 after 16:00 HKT", "event": "Hong Kong completed close, turnover and Stock Connect confirmation", "boundary": "10:09 HKT official values are a 15-minute-limited intraday observation, not a close.", "positive": "Completed index direction and official activity data improve from the morning snapshot.", "negative": "The morning decline persists or activity data do not support a change in risk appetite."},
+    {"id": "employment", "when": "4 Sep 2026, 08:30 EDT / 20:30 HKT", "event": "U.S. August Employment Situation", "boundary": "Official BLS schedule; results are unknown at this report cutoff.", "positive": "Employment, unemployment and wage evidence are assessed with inflation and rates rather than treated as one-way market instructions.", "negative": "A material surprise raises rate, growth or valuation uncertainty without cross-market confirmation."}
+  ]
+}

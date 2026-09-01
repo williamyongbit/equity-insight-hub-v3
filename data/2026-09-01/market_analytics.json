@@ -1,0 +1,17 @@
+{
+  "report_date": "2026-09-01",
+  "as_of": "2026-08-31",
+  "source": "Yahoo Finance chart endpoint; adjusted daily close; public market-data fallback",
+  "breadth_definition": "Percentage of the 11 Select Sector SPDR ETFs with a positive total return over the stated trailing trading-day window.",
+  "limitation": "Tradable sector-breadth proxy; not NYSE/Nasdaq advance-decline breadth and not constituent-level participation.",
+  "latest": {
+    "daily_breadth_pct": 18.2,
+    "five_day_breadth_pct": 18.2,
+    "twenty_day_breadth_pct": 63.6,
+    "spy_five_day_return_pct": 0.47
+  },
+  "files": {
+    "raw_input": "data/2026-09-01/market_breadth_raw.json",
+    "calculation_output": "data/2026-09-01/market_analytics_detail.json"
+  }
+}

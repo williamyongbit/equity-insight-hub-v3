@@ -1,0 +1,13 @@
+{
+  "report_date": "2026-09-01",
+  "sources": [
+    {"id": "treasury-curve", "tier": "Tier 1", "market": "U.S.", "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv", "label": {"TW": "美國財政部：2026年日度國債平價收益率", "CN": "美国财政部：2026年日度国债平价收益率", "EN": "U.S. Treasury: 2026 Daily Treasury Par Yield Curve Rates"}},
+    {"id": "cboe-vix", "tier": "Tier 1", "market": "U.S.", "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv", "label": {"TW": "Cboe：VIX日度價格歷史", "CN": "Cboe：VIX日度价格历史", "EN": "Cboe: VIX daily price history"}},
+    {"id": "reuters-larak", "tier": "Tier 2", "market": "Cross-market", "url": "https://www.reuters.com/world/middle-east/us-forces-strike-two-iranian-launchers-irans-larak-island-us-official-says-2026-08-30/", "label": {"TW": "Reuters：美軍據報襲擊Larak Island發射器", "CN": "Reuters：美军据报打击Larak Island发射器", "EN": "Reuters: reported U.S. action at Larak Island"}},
+    {"id": "ap-session", "tier": "Tier 2", "market": "U.S.", "url": "https://spectrumlocalnews.com/us/snplus/international/2026/08/31/oil-prices-u-s--iran-war-strikes-strait-of-hormuz", "label": {"TW": "Associated Press：8月31日美股、油價及公司市場報道", "CN": "Associated Press：8月31日美股、油价及公司市场报道", "EN": "Associated Press: 31 Aug U.S. market, oil and company coverage"}},
+    {"id": "cnbc-hk", "tier": "Tier 2", "market": "Hong Kong", "url": "https://www.cnbc.com/2026/08/30/stock-market-today-live-updates.html", "label": {"TW": "CNBC：8月31日美國與亞洲市場連續性報道", "CN": "CNBC：8月31日美国与亚洲市场连续性报道", "EN": "CNBC: 31 Aug U.S. and Asia market continuity coverage"}},
+    {"id": "hsi-official", "tier": "Tier 1", "market": "Hong Kong", "url": "https://www.hsi.com.hk/eng", "label": {"TW": "恒生指數公司：官方指數頁面與服務狀態", "CN": "恒生指数公司：官方指数页面与服务状态", "EN": "Hang Seng Indexes: official index page and service status"}},
+    {"id": "bls-employment", "tier": "Tier 1", "market": "Macro", "url": "https://www.bls.gov/schedule/news_release/empsit.htm", "label": {"TW": "美國勞工統計局：就業形勢發布日程", "CN": "美国劳工统计局：就业形势发布日期程", "EN": "U.S. BLS: Employment Situation release schedule"}},
+    {"id": "investopedia-session", "tier": "Tier 2", "market": "U.S.", "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-08312026-12073545", "label": {"TW": "Investopedia：8月31日個股及板塊市場報道", "CN": "Investopedia：8月31日个股及板块市场报道", "EN": "Investopedia: 31 Aug stock and sector market coverage"}}
+  ]
+}
