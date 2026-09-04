@@ -264,3 +264,7 @@
 - [x] 將市場制度、定價內容、領導力／廣度、預期差、事件風險圖及有條件產業鏈傳導設為美股增強規格；將港股七鏡頭設為收市後同日更新規格。
 - [x] 更新Manus與Claude可重用BIT Skills、參考文件、Project Instructions、Claude routine prompt及新觸發升級契約；產出不直接改網站的分階段實作計畫和首次受監督執行提示。
 - [x] 對照company repository最新架構、固定root、版本庫和PDF／多語需求驗證文件，再提交遷移文件至company main並交付Claude操作順序。
+
+## Cross-AI Continuity Handoff — September 2026
+
+- [x] 建立一份單一、可交給Claude或其他AI的完整交接文件：記錄company GitHub／Pages狀態、已發布版本、永久Skills、Claude Cowork遷移、20+5情報模型、尚未實作的AM／PM資料基礎、每日發布閘門與安全回退流程。
