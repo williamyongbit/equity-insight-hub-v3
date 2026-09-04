@@ -1,12 +1,12 @@
 # BIT Daily Market Intelligence — Claude Cowork Migration
 
-**Status:** Current operating guide as of 26 August 2026 HKT.
+**Status:** Current operating guide, refreshed after the public 27 August, 28 August and 1 September 2026 editions.
 **Canonical repository:** `williamyongbit/equity-insight-hub-v3`.
 **Canonical public root:** `https://williamyongbit.github.io/equity-insight-hub-v3/`.
 
 ## Purpose and scope
 
-This guide replaces the legacy personal-repository migration assumptions for ongoing daily operation. The public website and the reusable operating standard are finalized through the 26 August 2026 edition. Claude’s role is to research, draft, validate, update, and publish subsequent daily editions while preserving the approved product, data boundaries and historical access.
+This guide replaces the legacy personal-repository migration assumptions for ongoing daily operation. The production source of truth is the current company repository, not a historical chat, patch or older migration document. Claude’s role is to self-audit the current repository, research, draft, validate, update and publish subsequent daily revisions while preserving the approved product, data boundaries and historical access.
 
 > Do not treat the older `YongWilliam-ai/equity-insight-hub-v3` migration report as the current production state. It is historical migration evidence only. Do not push to it. Do not modify the original Manus-hosted site.
 
@@ -22,7 +22,7 @@ This guide replaces the legacy personal-repository migration assumptions for ong
 
 ## One-time setup
 
-1. Update Claude Desktop, select **Cowork**, and create a Project using a local clone of `williamyongbit/equity-insight-hub-v3` as the working folder.
+1. Update Claude Desktop, select **Cowork**, and create a Project using a local clone of `williamyongbit/equity-insight-hub-v3` as the working folder. Before every fresh task run `git fetch origin`, read the current `origin/main` log, `data/report_archive.json`, the active hub/router and the latest dated report; this self-audit supersedes all pre-27-August chat context.
 2. In the Project, add the project instructions from `CLAUDE_COWORK_PROJECT_INSTRUCTIONS.md` and attach the BIT custom-skill ZIP supplied with this package. Enable the skill.
 3. In Claude’s GitHub integration, add or refresh the **company** repository. Select only the folders Claude needs: `client/src`, `data`, `scripts`, `handoff/claude`, `docs`, `reports`, `package.json`, `pnpm-lock.yaml`, and brand assets. Sync before every new daily run.
 4. Enable Claude **Research** and web search. Use Research for broad, cited investigation; use the source hierarchy in the skill for publication facts.
@@ -37,16 +37,17 @@ The U.S. sequence is: completed U.S. session, macro/market drivers, **Stocks / I
 
 Use the Hong Kong dual clock: prior completed close; explicit HKT timestamped intraday observation only while it exists; post-close turnover/Stock Connect verification; then the next Hong Kong/U.S. validation window. Never call an intraday observation a close.
 
-## Daily operating sequence
+## Expanded daily operating sequence
 
 1. Read the user’s daily source pack, current report, previous thesis and `data/report_archive.json`. Record HKT run time and identify the latest completed U.S. and Hong Kong sessions.
-2. Use Research to find sources, then verify material claims through Tier 1 sources first and Tier 2 sources second. Treat user-provided media and Tier 3 sources as leads, not facts.
-3. Classify the previous watch items as confirmed, partially confirmed, invalidated or unresolved. Write one evidence-bounded market thesis using one to three drivers.
-4. Draft complete TW/CN/EN content. Separate completed facts, intraday observations and future catalysts. Use neutral internal research language and no individualized investment recommendation or return guarantee.
-5. Update the correct current dated files, archive record, report component/hub and router based on the **actual architecture in the latest clone**. Preserve explicit historical query routes; do not blindly apply old pointer/refactor instructions from legacy handoff files.
-6. Run the date-specific validator, TypeScript check, production build, and local browser review for desktop, 390px mobile and `?export=pdf`. Check all languages, both modes, heatmap windows, archive history, source disclosure and console errors.
-7. Before any publish, inspect `git diff`, check for secrets/private material and verify the root/archive routes. If any evidence, build, visual, authorization or deployment gate fails, retain the prior public site and set the run to `NOT_DEPLOYED`.
-8. On an approved routine run, commit only to company `main`, deploy the built static bundle to company `gh-pages`, wait for propagation and validate a cache-busted public URL. Never claim publication until that public URL is checked.
+2. Use Research to select from a 20-slot U.S./global evidence pool, then verify material claims through Tier 1 sources first and Tier 2 sources second. Treat user-provided media and Tier 3 sources as leads, not facts. Do not publish a twenty-headline list; select only evidence that changes the thesis.
+3. Classify the previous watch items as confirmed, partially confirmed, invalidated or unresolved. Write one evidence-bounded market thesis using one to three drivers and answer what is already priced, what remains uncertain and what could reprice it.
+4. Publish the Morning Intelligence Edition at 09:30–10:00 HKT. It covers completed U.S. evidence and prior HK completed-close/HK-opening setup only. Separate completed facts, intraday observations and future catalysts. Use neutral internal research language and no individualized investment recommendation or return guarantee.
+5. At 17:00–17:30 HKT, update the same date as the HK Close Intelligence Edition only when reliable completed HK evidence exists. Use five lenses: index/breadth, turnover/Southbound/positioning, funding, China policy/macro, and 3–6 material HKEX/company events plus HK→U.S. read-through. Preserve the AM revision and set `edition`, `cutoff_hkt` and `revision_timestamp`. If data is unavailable, state `UNKNOWN / UNVERIFIED`.
+6. Update the correct current dated files, archive record, report component/hub and router based on the **actual architecture in the latest clone**. Preserve explicit historical query routes; do not blindly apply old pointer/refactor instructions from legacy handoff files.
+7. Run the date-specific validator, TypeScript check, production build, and local browser review for desktop, 390px mobile and `?export=pdf`. Check all languages, both modes, heatmap windows, archive history, source disclosure and console errors.
+8. Before any publish, inspect `git diff`, check for secrets/private material and verify the root/archive routes. If any evidence, build, visual, authorization or deployment gate fails, retain the prior public site and set the run to `NOT_DEPLOYED`.
+9. On an approved routine run, commit only to company `main`, deploy the built static bundle to company `gh-pages`, wait for propagation and validate a cache-busted public URL. Never claim publication until that public URL is checked.
 
 ## First supervised live run
 
@@ -54,7 +55,7 @@ Use `CLAUDE_FIRST_SUPERVISED_RUN_PROMPT.md`. The result must be a complete draft
 
 ## Scheduling after supervised approval
 
-Create a Cowork scheduled task only after the first supervised report is accepted. Set it at **07:45 HKT**, beginning with a daily draft/release-readiness task. Once repeatability is proved, include the controlled publish step in the same task. Scheduled tasks run remotely and cannot depend on a local folder; required inputs therefore need to be available through the Project, cloud files, configured connectors and GitHub access.
+Create a Cowork scheduled task only after one supervised Morning Edition and one supervised same-date HK Close Edition are accepted. Start with a controlled Morning draft at **07:45 HKT** so it can meet the 09:30–10:00 HKT release target. Add the controlled HK close update only after the AM/PM data, revision and public-verification gates are reproducible. Scheduled tasks run remotely and cannot depend on a local folder; required inputs therefore need to be available through the Project, cloud files, configured connectors and GitHub access.
 
 ## References
 

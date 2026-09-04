@@ -5,7 +5,7 @@ description: Run the BIT daily U.S./Hong Kong market-report workflow in Claude C
 
 # BIT Daily Market Intelligence for Claude Cowork
 
-Use this skill only for the company-maintained **BIT Market Intelligence** workflow. The canonical repository is `williamyongbit/equity-insight-hub-v3`; the fixed public root is `https://williamyongbit.github.io/equity-insight-hub-v3/`. Do not modify the original Manus-hosted site or the legacy `YongWilliam-ai` repository.
+Use this skill only for the company-maintained **BIT Market Intelligence** workflow. The canonical repository is `williamyongbit/equity-insight-hub-v3`; the fixed public root is `https://williamyongbit.github.io/equity-insight-hub-v3/`. Do not modify the original Manus-hosted site or the legacy `YongWilliam-ai` repository. Before any edit, self-audit the current GitHub state with `git fetch origin`, the latest `origin/main` log, `data/report_archive.json`, the current hub/router and the latest dated report; never rely on a pre-27-August conversation as production state.
 
 ## Select the route
 
@@ -25,7 +25,7 @@ Identify the user’s route before work:
 
 Turn on **Research** and web search for source discovery and cited synthesis. Use the connected company GitHub repository for current code context; sync it before every fresh task. Use Cowork for long-running file/repository work. Do not confuse GitHub context with GitHub write authorization, and do not confuse Research citations with verified Tier 1 evidence.
 
-Read `references/bit_daily_contract.md` before daily research. Use `templates/first_supervised_run.md` for the first live run and `templates/routine_daily_run.md` only after supervised approval.
+Read `references/bit_daily_contract.md` and `references/intelligence_system_upgrade.md` before daily research. Use `templates/first_supervised_run.md` for the first live run and `templates/routine_daily_run.md` only after supervised approval.
 
 ## Daily truth rules
 
@@ -34,7 +34,8 @@ Read `references/bit_daily_contract.md` before daily research. Use `templates/fi
 3. Read user material fully first. Treat it as a lead until verified. A search snippet is not evidence.
 4. Apply the hierarchy: Tier 1 primary source, Tier 2 reputable reporting, Tier 3 lead/style context. Keep completed facts, intraday context and future catalysts separate.
 5. Audit the prior thesis as confirmed, partially confirmed, invalidated or unresolved. Build one thesis from one to three evidence-backed drivers.
-6. Draft all six paths in full TW/CN/EN: Overview, U.S., Hong Kong, Cross-market, This Week and Sources. Education and Analysis must differ materially.
+6. Use the 20-slot U.S./global research pool and five Hong Kong-close lenses as selection checklists, not reader-facing quotas. Explain expectation → evidence → transmission → price reaction → confirmation/invalidation.
+7. Draft all six paths in full TW/CN/EN: Overview, U.S., Hong Kong, Cross-market, This Week and Sources. Education and Analysis must differ materially.
 
 ## Product rules
 
@@ -42,7 +43,7 @@ Preserve the BIT white/black/blue shell, data-driven visible archive, fixed late
 
 For the U.S. section and printable document, use this sequence: completed-session context, macro/market drivers, **Stocks / Industry Chain** fact–meaning–next-validation cards, then the dark Sector Heatmap. Retain 1D/5D/20D controls and green-positive/grey-neutral/orange-red-negative semantics. Do not restore retired SVG export, breadth summary or unproven-claims cards.
 
-For Hong Kong, maintain the dual clock: prior completed close; timestamped intraday state if any; post-close turnover/Stock Connect confirmation; and the next validation window.
+Operate one same-date product with two evidence-bounded revisions. Morning Edition is due 09:30–10:00 HKT and covers completed U.S. evidence, prior HK close and HK opening setup only. HK Close Edition is due 17:00–17:30 HKT and adds official completed-market analysis through five lenses: index/breadth, flow/liquidity, funding, China policy/macro, and company/HKEX/HK→U.S. read-through. Preserve the AM revision and write `edition`, `cutoff_hkt` and `revision_timestamp`; never create a second date or fabricate unavailable close data.
 
 ## Release gate
 

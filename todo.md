@@ -255,3 +255,12 @@
 - [x] 以實際Asia/Hong_Kong執行時間及Tier 1／Tier 2來源核實8月31日美股完成收市、地緣／油價、利率／政策、AI／半導體與香港市場狀態；不將外部材料或搜索摘要當作事實。
 - [x] 建立2026-09-01可審計資料、熱力圖輸入、完整TW／CN／EN六節雙模式內容、版本庫entry與固定root路由；保留所有歷史版本和既定產品順序。
 - [x] 完成日期資料、型別、生产建置、桌面／390px／PDF／语种／模式／热力图／版本库检查后，才推送company main与gh-pages并公开验证缓存绕过固定root。
+
+## Intelligence System Upgrade — AM/PM Daily Cycle and Expanded Evidence Pools
+
+- [x] 對照Claude 8月27日交接記錄、目前9月1日company main／gh-pages及BIT Skill，標明所有過時repo、日期、部署和技能假設，並建立Claude必須自行GitHub讀取的最新狀態入口。
+- [x] 定義09:30–10:00 HKT Morning Intelligence Edition與17:00–17:30 HKT同日HK Close Intelligence Edition的資料邊界、版本歷史、更新／不更新規則和明確NOT_DEPLOYED防線。
+- [x] 把每日研究池擴充為20個優先美股／全球跨資產驗證點及5個港股完成市場驗證點，按市場制度、可用資料與Tier 1／Tier 2來源分層，不以堆砌新聞取代分析。
+- [x] 將市場制度、定價內容、領導力／廣度、預期差、事件風險圖及有條件產業鏈傳導設為美股增強規格；將港股七鏡頭設為收市後同日更新規格。
+- [x] 更新Manus與Claude可重用BIT Skills、參考文件、Project Instructions、Claude routine prompt及新觸發升級契約；產出不直接改網站的分階段實作計畫和首次受監督執行提示。
+- [x] 對照company repository最新架構、固定root、版本庫和PDF／多語需求驗證文件，再提交遷移文件至company main並交付Claude操作順序。
