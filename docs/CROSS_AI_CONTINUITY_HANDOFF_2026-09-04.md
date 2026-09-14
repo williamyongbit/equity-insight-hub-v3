@@ -1,6 +1,6 @@
 # BIT Daily Market Intelligence — Cross-AI Continuity Handoff
 
-**Prepared:** 4 September 2026, Asia/Hong_Kong  
+**Updated:** 14 September 2026, Asia/Hong_Kong
 **Purpose:** Let Claude Cowork, Claude Code, or another capable AI safely take over the BIT Daily Market Intelligence workflow without relying on historical chat context.  
 **Controlling rule:** **The current company GitHub repository is the source of truth.** This document is a map to that source, not a replacement for it.
 
@@ -10,7 +10,7 @@
 
 The production website is a public, static GitHub Pages report product for the BIT U.S. Equities Team. It has an approved white/black/blue BIT design; six reader sections; full Traditional Chinese, Simplified Chinese and English localization; genuinely distinct Education and Analysis modes; a visible, data-driven historical archive; 1D/5D/20D sector heatmap controls; and a browser-native whole-report PDF/print route.
 
-The latest **publicly verified production report** at the time of this handoff is the **1 September 2026** edition. Its fixed-root report and historical editions were verified after deployment. The public product must not be confused with the original Manus-hosted site or the legacy personal GitHub repository.
+The latest **publicly verified production report** at the time of this handoff is the **14 September 2026** edition. Its fixed-root report and preserved historical routes were verified after deployment. The public product must not be confused with the original Manus-hosted site or the legacy personal GitHub repository.
 
 The daily workflow has been expanded at the **policy and handoff level**, but its new AM/PM data model and richer analytical modules have **not yet been implemented in website code**. This is deliberate. The next AI must first plan and then supervise the smallest safe implementation: an AM/PM same-date revision envelope and a Thesis Ledger data foundation. It must **not** redesign the site, set an autonomous publishing schedule, or make broad visual changes before that foundation is approved and tested.
 
@@ -22,10 +22,9 @@ The daily workflow has been expanded at the **policy and handoff level**, but it
 |---|---|---|
 | Production source repository | `https://github.com/williamyongbit/equity-insight-hub-v3` | The sole repository for daily maintenance. Work only on its `main` and configured `gh-pages` branches. |
 | Fixed public root | `https://williamyongbit.github.io/equity-insight-hub-v3/` | The root always serves the most recently approved daily edition. |
-| Latest source-of-truth main commit at handoff | `6830e86` — **Expand BIT intelligence workflow and Claude handoff** | Always run `git fetch origin` and inspect `origin/main`; this may become stale. |
-| Last public report source commit | `665175b` — **Publish 1 September BIT daily market intelligence** | Contains the latest published report data, components, routing and checks. |
-| Last main verification record | `92c6d17` — **Record 1 September public verification** | Records successful public fixed-root/history verification. |
-| Last Pages bundle commit | `89b39dc` on `gh-pages` | Latest known static deployment bundle at handoff. Verify current `origin/gh-pages`, not this number alone. |
+| Latest source-of-truth main commit at handoff | `683e89c` — **Publish BIT daily intelligence for 2026-09-14** | Always run `git fetch origin` and inspect `origin/main`; this may become stale. |
+| Last public report source commit | `683e89c` — **Publish BIT daily intelligence for 2026-09-14** | Contains the latest published report data, components, routing and checks. |
+| Last Pages bundle commit | `d49db73` on `gh-pages` | Verified static deployment bundle for 14 September. Verify current `origin/gh-pages`, not this number alone. |
 | Legacy personal repository | `YongWilliam-ai/equity-insight-hub-v3` | Historical only. Do not push, deploy or maintain daily reports there. |
 | Original Manus-hosted site | Separate original website | Never modify it under this workflow. |
 
@@ -40,7 +39,7 @@ The following production work has been completed and should be preserved.
 | Area | Completed state |
 |---|---|
 | Company migration | Daily maintenance moved from the personal repository to `williamyongbit/equity-insight-hub-v3`. The company GitHub Pages root is live. |
-| Stable routing | The root renders the latest daily edition. Dated query routes preserve historical editions, including 21, 24, 25, 26, 27 and 28 August and 1 September 2026. |
+| Stable routing | The root renders the latest daily edition. Dated query routes preserve historical editions, including 21, 24, 25, 26, 27 and 28 August, 1 September and 14 September 2026. |
 | Archive | `data/report_archive.json` drives a visible edition archive. Each new date appends a record; historical records must not be overwritten. |
 | Language and modes | TW/CN/EN are complete reader-facing locales. Education and Analysis modes must provide different value, not translated duplicates. |
 | U.S. structure | Completed U.S. session → macro/market drivers → Stocks / Industry Chain fact–meaning–next-validation cards → dark Sector Heatmap. |
@@ -48,7 +47,7 @@ The following production work has been completed and should be preserved.
 | Hong Kong logic | Dual clock is established: prior completed HK session plus only an explicitly timestamped intraday snapshot when available; never call an intraday level a close. |
 | PDF | `?export=pdf` serializes all six sections in the selected language with a browser-native Print/Save as PDF action; it does not auto-open a print dialogue. |
 | Responsive behavior | Language, archive and full-PDF controls were checked on desktop and 390px mobile. Page-level horizontal overflow is not permitted. |
-| 26–28 Aug and 1 Sep reports | These daily editions were built, validated, pushed to `main`, deployed to `gh-pages`, then checked through cache-busted public URLs. |
+| 26–28 Aug, 1 Sep and 14 Sep reports | These daily editions were built, validated, pushed to `main`, deployed to `gh-pages`, then checked through cache-busted public URLs. |
 | Claude migration package | Initial Cowork migration material was added at `a136cb4`, then refreshed and expanded at `6830e86`. |
 
 ---
@@ -214,7 +213,7 @@ After William explicitly approves that plan, use `[ideation]` to make a local-on
 | Need | Main paths |
 |---|---|
 | Application router | `client/src/App.tsx` |
-| Latest report implementations | `client/src/pages/DailySep01Full.tsx`, `client/src/pages/DailyHubSep01.tsx` at handoff; always inspect current latest after fetch |
+| Latest report implementations | `client/src/pages/DailySep14Full.tsx`, `client/src/pages/DailyHubSep14.tsx` at handoff; always inspect current latest after fetch |
 | Historical report implementations | `client/src/pages/DailyAug*.tsx` and their dated query routes |
 | Dated evidence | `data/YYYY-MM-DD/us_market.json`, `hk_market.json`, `thesis.json`, `sources.json` |
 | Heatmap analytics | `data/YYYY-MM-DD/market_analytics*.json`, `market_breadth_raw.json` |
@@ -226,7 +225,7 @@ After William explicitly approves that plan, use `[ideation]` to make a local-on
 | Claude migration guide | `handoff/claude/CLAUDE_COWORK_MIGRATION_2026-08-26.md` |
 | Claude custom Skill source | `handoff/claude/skills/bit-daily-market-intelligence-claude/` |
 | Upgrade roadmap | `docs/INTELLIGENCE_UPGRADE_ROADMAP_2026-09-01.md` |
-| Current cross-AI readiness prompt | `handoff/claude/CLAUDE_GITHUB_STATE_AND_INTELLIGENCE_UPGRADE_PROMPT_2026-09-01.md` |
+| Current cross-AI readiness prompt | `handoff/claude/CLAUDE_GITHUB_STATE_AND_INTELLIGENCE_UPGRADE_PROMPT_2026-09-14.md` |
 | Permanent Manus Skill | `/home/ubuntu/skills/bit-daily-market-intelligence/` |
 
 Some old documents in `handoff/claude/` reflect prior migration phases. `handoff/claude/DAILY_WORKFLOW.md` is now an explicit pointer to the controlling files and must not be used as an independent single-cycle contract.
@@ -251,14 +250,14 @@ git status --short
 
 ### Step 2 — Refresh Claude’s permanent context once
 
-1. Upload `bit-daily-market-intelligence-claude-2026-09-01.zip` through **Customize → Skills → Create skill → Upload a skill**, then enable it.
+1. Upload the latest packaged `bit-daily-market-intelligence-claude` Skill through **Customize → Skills → Create skill → Upload a skill**, then enable it.
 2. Replace the existing Cowork Project Instructions with `handoff/claude/CLAUDE_COWORK_PROJECT_INSTRUCTIONS.md`.
 3. Keep `handoff/claude/CLAUDE_COWORK_MIGRATION_2026-08-26.md` and `docs/INTELLIGENCE_UPGRADE_ROADMAP_2026-09-01.md` in project context.
 4. Do not upload `pasted_content_20.txt`, `pasted_content_21.txt` or `pasted_content_22.txt` as operational truth. They are historical conversation material. The upgrade they describe has already been reconciled into the current repository documents.
 
 ### Step 3 — First Claude task: readiness only
 
-Create a fresh Cowork task. Paste the full content of `handoff/claude/CLAUDE_GITHUB_STATE_AND_INTELLIGENCE_UPGRADE_PROMPT_2026-09-01.md`. Its expected output is a short readiness memo, not code.
+Create a fresh Cowork task. Paste the full content of `handoff/claude/CLAUDE_GITHUB_STATE_AND_INTELLIGENCE_UPGRADE_PROMPT_2026-09-14.md`. Its expected output is a short readiness memo, not code.
 
 The memo must identify the actual latest repository commit/date, fixed root, command router, current report structure, AM/PM proposal and the smallest next Phase 1. It must list any mismatch between current repository state and an old handoff. It must not commit, push, deploy, schedule or change report data.
 

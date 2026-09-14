@@ -16,4 +16,15 @@
 
 ## Result
 
-The local 14 September candidate is suitable for source-control review. Public deployment remains blocked until company-main and GitHub Pages checks are completed.
+The local 14 September candidate is suitable for source-control review.
+
+## Public deployment checks
+
+- Company `main` commit `683e89c` was pushed successfully only after GitHub write authorization was refreshed.
+- GitHub Pages deployment commit `d49db73` was pushed to the company `gh-pages` branch.
+- A cache-busted public root request using `?v=d49db73-r1&date=2026-09-14&market=overview&lang=CN` loaded the 14 September Simplified Chinese thesis, including the completed-11-September and 18.2% multi-day-breadth boundary, with zero application console errors.
+- Cache-busted historical routes for 1 September and 28 August loaded without application errors after the root update.
+
+## Result
+
+The 14 September report is publicly deployed. The next administrative task is to refresh the Claude handoff with this verified production state; it is not a reason to alter the public report.

@@ -271,7 +271,13 @@
 
 ## External Daily Market News Report — 14 September 2026
 
-- [ ] 完整提取William提供的兩份9月14日外部材料，並以最新已發布報告的thesis作為待重建的連續性起點；外部材料只作線索，不作事實。
-- [ ] 以實際Asia/Hong_Kong執行時間和Tier 1／Tier 2來源核實最近完成美股時段、8月CPI／FOMC日程、公司披露、能源／地緣、加密監管程序及香港市場完成／盤中狀態。
-- [ ] 建立2026-09-14可審計資料、熱力圖輸入、完整TW／CN／EN六節雙模式內容、版本庫entry與固定root更新，保留全部歷史版、個股／產業鏈先於熱力圖及PDF／archive行為。
-- [ ] 完成日期資料、型別、生产建置、桌面／390px／PDF／语种／模式／热力图／版本库检查后，才推送company main与gh-pages并用公开缓存绕过固定root验证。
+- [x] 完整提取William提供的兩份9月14日外部材料，並以最新已發布報告的thesis作為待重建的連續性起點；外部材料只作線索，不作事實。
+- [x] 以實際Asia/Hong_Kong執行時間和Tier 1／Tier 2來源核實最近完成美股時段、8月CPI／FOMC日程、公司披露、能源／地緣、加密監管程序及香港市場完成／盤中狀態。
+- [x] 建立2026-09-14可審計資料、熱力圖輸入、完整TW／CN／EN六節雙模式內容、版本庫entry與固定root更新，保留全部歷史版、個股／產業鏈先於熱力圖及PDF／archive行為。
+- [x] 完成日期資料、型別、生产建置、桌面／390px／PDF／语种／模式／热力图／版本库检查后，才推送company main与gh-pages并用公开缓存绕过固定root验证。
+
+## 14 September Release Recovery and Claude Transition
+
+- [x] 恢复并验证对williamyongbit/equity-insight-hub-v3的GitHub写入授权；不把本地提交、浏览器所有者身份或API读取权限误称为已推送。
+- [x] 将已验证的本地`683e89c`推送至company main，部署到gh-pages，并用缓存绕过固定root及历史路由完成公开验证；如授权未恢复则保持NOT_DEPLOYED。
+- [x] 仅在9月14日公开版本确认后，更新Claude交接材料的最新日期、source／Pages commit、公开网址和未解决证据边界，再推送交接更新至company main。
