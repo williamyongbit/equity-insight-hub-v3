@@ -1,0 +1,31 @@
+{
+  "report_date": "2026-09-14",
+  "as_of_hkt": "2026-09-14T10:57:00+08:00",
+  "completed_session": {
+    "market": "United States regular session",
+    "date": "2026-09-11",
+    "status": "completed"
+  },
+  "index_close": {
+    "Dow Jones": { "value": 52573.29, "change_pct": 0.98, "source": "CNBC completed-session report" },
+    "S&P 500": { "value": 7656.98, "change_pct": 0.86, "source": "CNBC completed-session report" },
+    "Nasdaq": { "value": 26333.04, "change_pct": 0.96, "source": "CNBC completed-session report" }
+  },
+  "volatility": { "symbol": "VIX", "close": 15.84, "date": "2026-09-11", "source": "Cboe VIX daily historical data" },
+  "treasury_daily_par_yields": { "date": "2026-09-11", "two_year": 4.63, "ten_year": 4.96, "thirty_year": 5.35, "source": "U.S. Treasury Daily Treasury Par Yield Curve Rates", "limitation": "Official daily par reference rates; not intraday traded yields." },
+  "drivers": [
+    { "status": "attributed", "statement": "CNBC and Investopedia described a broad Friday rebound as oil retreated from its earlier weekly surge and investors absorbed the August CPI release.", "source": "CNBC; Investopedia" },
+    { "status": "official", "statement": "BLS reported August all-items CPI +0.4% month-on-month and +3.4% year-on-year; core CPI +0.3% month-on-month and +2.4% year-on-year.", "source": "BLS" },
+    { "status": "conditional", "statement": "The 15–16 September FOMC meeting and 16 September statement/press conference remain future events at this report cutoff.", "source": "Federal Reserve" }
+  ],
+  "companies": [
+    { "ticker": "ORCL", "evidence": "Official Q1 FY27 revenue $19.345bn (+30%), cloud revenue $11.607bn (+62%), IaaS revenue $7.4bn (+121%) and RPO $664bn; Q1 free cash flow was -$5bn.", "source": "Oracle Investor Relations", "status": "official" },
+    { "ticker": "NVDA / Anthropic", "evidence": "Reuters reported that Anthropic was in talks for NVIDIA to be an anchor investor in a possible IPO and cited a source saying NVIDIA was considering up to $10bn. The discussions could change; neither company confirmed to Reuters.", "source": "Reuters", "status": "reported-not-confirmed" },
+    { "ticker": "OpenAI / Anthropic", "evidence": "Reuters, citing Bloomberg reporting, said Altman told staff OpenAI could pace development alongside other labs; an Anthropic spokesperson said it was interested in industry work on the pace of releases.", "source": "Reuters", "status": "reported-not-confirmed" }
+  ],
+  "withheld": [
+    "A certainty or completed outcome for the September FOMC decision.",
+    "A three-company AI agreement, confirmed OpenAI IPO delay or a causal futures conclusion.",
+    "Unsupported oil, precious-metal, crypto, FX, ETF-flow and individual-stock price claims from the external reports."
+  ]
+}

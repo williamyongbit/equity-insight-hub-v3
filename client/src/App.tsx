@@ -13,6 +13,7 @@ import DailyHubAug26 from "./pages/DailyHubAug26";
 import DailyHubAug27 from "./pages/DailyHubAug27";
 import DailyHubAug28 from "./pages/DailyHubAug28";
 import DailyHubSep01 from "./pages/DailyHubSep01";
+import DailyHubSep14 from "./pages/DailyHubSep14";
 
 function RootRoute() {
   const date = new URLSearchParams(window.location.search).get("date");
@@ -22,7 +23,8 @@ function RootRoute() {
   if (date === "2026-08-26") return <DailyHubAug26 />;
   if (date === "2026-08-27") return <DailyHubAug27 />;
   if (date === "2026-08-28") return <DailyHubAug28 />;
-  return <DailyHubSep01 />;
+  if (date === "2026-09-01") return <DailyHubSep01 />;
+  return <DailyHubSep14 />;
 }
 
 function Routes() {

@@ -1,0 +1,26 @@
+{
+  "report_date": "2026-09-14",
+  "as_of_hkt": "2026-09-14T10:57:00+08:00",
+  "previous_completed_session": {
+    "date": null,
+    "status": "not_independently_obtained",
+    "limitation": "No independently captured completed Hong Kong close, turnover or Stock Connect flow is available in this report evidence set."
+  },
+  "intraday_snapshot": {
+    "as_of": "2026-09-14 10:57 HKT",
+    "status": "intraday_not_close",
+    "source": "Hang Seng Indexes official index overview",
+    "limitation": "Hang Seng Indexes reports a system outage: values are not reflected promptly and only a limited number of values are updated every 15 minutes. This is not a close.",
+    "indices": {
+      "HSI": { "value": 24830.72, "change_pct": 0.10, "change_points": 25.09 },
+      "HSCEI": { "value": 8251.13, "change_pct": 0.06, "change_points": 4.80 },
+      "HSTECH": { "value": 4312.14, "change_pct": 0.20, "change_points": -8.43 },
+      "HSBIO": { "value": 15377.61, "change_pct": 3.40, "change_points": 505.18 }
+    }
+  },
+  "post_close_checks": [
+    "Official completed index levels and status of the provider outage.",
+    "HKEX market turnover and, where available, Historical Daily Stock Connect data.",
+    "Whether intraday biotech outperformance survives the close without inferring a single driver."
+  ]
+}

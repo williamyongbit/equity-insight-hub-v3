@@ -1,0 +1,15 @@
+{
+  "report_date": "2026-09-14",
+  "sources": [
+    { "id": 1, "market": "US", "tier": "Tier 1", "label": { "TW": "美國勞工統計局：2026年8月消費者物價指數", "CN": "美国劳工统计局：2026年8月消费者物价指数", "EN": "U.S. Bureau of Labor Statistics: Consumer Price Index, August 2026" }, "url": "https://www.bls.gov/news.release/cpi.htm" },
+    { "id": 2, "market": "US", "tier": "Tier 1", "label": { "TW": "美國財政部：每日國債平價收益率曲線", "CN": "美国财政部：每日国债平价收益率曲线", "EN": "U.S. Treasury: Daily Treasury Par Yield Curve Rates" }, "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates" },
+    { "id": 3, "market": "US", "tier": "Tier 1", "label": { "TW": "Cboe：VIX每日歷史資料", "CN": "Cboe：VIX每日历史数据", "EN": "Cboe: VIX daily historical data" }, "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv" },
+    { "id": 4, "market": "US", "tier": "Tier 1", "label": { "TW": "聯儲局：FOMC會議日程與9月日曆", "CN": "美联储：FOMC会议日程与9月日历", "EN": "Federal Reserve: FOMC meeting calendars and September calendar" }, "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+    { "id": 5, "market": "US", "tier": "Tier 1", "label": { "TW": "Oracle投資者關係：FY27第一季業績", "CN": "Oracle投资者关系：FY27第一季业绩", "EN": "Oracle Investor Relations: Q1 FY27 results" }, "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx" },
+    { "id": 6, "market": "HK", "tier": "Tier 1", "label": { "TW": "恒生指數公司：指數概覽（14日10:57 HKT盤中）", "CN": "恒生指数公司：指数概览（14日10:57 HKT盘中）", "EN": "Hang Seng Indexes: index overview (14 Sep 10:57 HKT intraday)" }, "url": "https://www.hsi.com.hk/eng" },
+    { "id": 7, "market": "US", "tier": "Tier 2", "label": { "TW": "CNBC：9月11日美股收市、油價與市場反應", "CN": "CNBC：9月11日美股收市、油价与市场反应", "EN": "CNBC: 11 September U.S. close, oil and market response" }, "url": "https://www.cnbc.com/2026/09/10/stock-market-today-live-updates.html" },
+    { "id": 8, "market": "US", "tier": "Tier 2", "label": { "TW": "Reuters：NVIDIA與Anthropic投資洽談", "CN": "Reuters：NVIDIA与Anthropic投资洽谈", "EN": "Reuters: NVIDIA–Anthropic investment talks" }, "url": "https://www.reuters.com/legal/transactional/nvidia-talks-invest-anthropics-mega-ipo-sources-say-2026-09-11/" },
+    { "id": 9, "market": "US", "tier": "Tier 2", "label": { "TW": "Reuters：OpenAI關於模型研發節奏的報道", "CN": "Reuters：OpenAI关于模型研发节奏的报道", "EN": "Reuters: report on OpenAI model-development pace" }, "url": "https://www.reuters.com/business/altman-tells-staff-openai-is-open-slowing-ai-development-bloomberg-news-reports-2026-09-11/" },
+    { "id": 10, "market": "US", "tier": "Tier 2", "label": { "TW": "Investopedia：9月11日市場回顧", "CN": "Investopedia：9月11日市场回顾", "EN": "Investopedia: 11 September market recap" }, "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-09112026-12115543" }
+  ]
+}

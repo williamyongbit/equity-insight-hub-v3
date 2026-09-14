@@ -1,6 +1,16 @@
 {
-  "latest": "2026-09-01",
+  "latest": "2026-09-14",
   "editions": [
+    {
+      "date": "2026-09-14",
+      "type": "daily",
+      "label": "14 Sep · Daily",
+      "summary": {
+        "TW": "最新：美股9月11日完成反彈／官方CPI與收益率／港股10:57 HKT受限盤中快照",
+        "CN": "最新：美股9月11日完成反弹／官方CPI与收益率／港股10:57 HKT受限盘中快照",
+        "EN": "Latest: 11 Sep U.S. rebound / official CPI and daily yields / limited 10:57 HKT Hong Kong intraday snapshot"
+      }
+    },
     {
       "date": "2026-09-01",
       "type": "daily",
